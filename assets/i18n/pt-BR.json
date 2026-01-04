@@ -1,0 +1,30 @@
+{
+  "appName": "Jogo da Bia",
+  "loading": {
+    "title": "Jogo da Bia",
+    "subtitle": "Preparando tudo..."
+  },
+  "nav": {
+    "swipe": "Deslizar",
+    "rules": "Regras"
+  },
+  "rules": {
+    "title": "Como jogar",
+    "subtitle": "Estas são as regras principais:",
+    "bullets": [
+      "Deslize para a esquerda para pular e somar 1 ponto.",
+      "A cada 10 deslizadas para a esquerda o contador brilha em verde.",
+      "Deslize para a direita para ver se deu match; se der, o contador volta para 0.",
+      "Cartas infinitas; novas aparecem enquanto você joga.",
+      "Conteúdo 100% local: piadas, histórias e imagens."
+    ],
+    "languageLabel": "Idioma",
+    "start": "Começar"
+  },
+  "swipe": {
+    "counter": "Swipes para a esquerda: {{count}}",
+    "match": "Match!",
+    "noMatch": "Sem match desta vez",
+    "empty": "Carregando mais cartas..."
+  }
+}

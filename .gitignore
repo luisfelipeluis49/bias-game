@@ -3,6 +3,9 @@
 # dependencies
 node_modules/
 
+# old project files
+old_project/
+
 # Expo
 .expo/
 dist/

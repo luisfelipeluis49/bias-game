@@ -1,0 +1,30 @@
+{
+  "appName": "Bia's Game",
+  "loading": {
+    "title": "Bia's Game",
+    "subtitle": "Getting things ready..."
+  },
+  "nav": {
+    "swipe": "Swipe",
+    "rules": "Rules"
+  },
+  "rules": {
+    "title": "How to play",
+    "subtitle": "Those are the main rules:",
+    "bullets": [
+      "Swipe left to skip and add 1 point.",
+      "Every 10 left swipes the counter glows bright green.",
+      "Swipe right to see if it's a match; if match, counter resets to 0.",
+      "Cards are infinite; new ones appear as you keep swiping.",
+      "Content uses local jokes, stories and images only."
+    ],
+    "languageLabel": "Language",
+    "start": "Start swiping"
+  },
+  "swipe": {
+    "counter": "Left swipes: {{count}}",
+    "match": "Match!",
+    "noMatch": "No match this time",
+    "empty": "Loading more cards..."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "appName": "Bia's Game",
+  "loading": {
+    "title": "Bia's Game",
+    "subtitle": "Préparation en cours..."
+  },
+  "nav": {
+    "swipe": "Glisser",
+    "rules": "Règles"
+  },
+  "rules": {
+    "title": "Comment jouer",
+    "subtitle": "Ta mission : swipe à gauche sur les phrases biaisées ou méchantes, et à droite sur celles qui sont positives et inclusives.",
+    "bullets": [
+      "Swipe gauche pour passer et ajouter 1 point.",
+      "Toutes les 10 swipes gauche, le compteur brille en vert.",
+      "Swipe droite pour voir si c'est un match; si oui, le compteur revient à 0.",
+      "Cartes infinies; de nouvelles arrivent pendant que tu joues.",
+      "Contenu 100% local: blagues et images."
+    ],
+    "languageLabel": "Langue",
+    "start": "Commencer"
+  },
+  "swipe": {
+    "counter": "Swipes gauche : {{count}}",
+    "match": "Match !",
+    "noMatch": "Pas de match cette fois",
+    "empty": "Chargement de nouvelles cartes..."
+  }
+}
