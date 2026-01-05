@@ -27,6 +27,7 @@
     "noMatch": "No match this time",
     "empty": "Loading more cards...",
     "streak": "Streak: {{count}} (best {{best}})",
+    "progress": "Next glow: {{current}}/{{target}} left swipes",
     "sprint": {
       "start": "Start 60s sprint",
       "timeLeft": "Sprint: {{seconds}}s left",

@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
-import { ActivityIndicator, Image, Pressable, StyleSheet, View } from 'react-native';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ActivityIndicator, Animated as RNAnimated, Easing as RNEasing, Image, Pressable, StyleSheet, View, useWindowDimensions } from 'react-native';
 import Animated, { interpolateColor, useAnimatedStyle, useSharedValue, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -30,6 +30,8 @@ export default function SwipeScreen() {
   const [refilling, setRefilling] = useState(false);
   const [sprintEndsAt, setSprintEndsAt] = useState<number | null>(null);
   const [sprintRemaining, setSprintRemaining] = useState(0);
+  const [confettiBursts, setConfettiBursts] = useState<{ id: number }[]>([]);
+  const confettiId = useRef(0);
 
   const glow = useSharedValue(0);
 
@@ -45,6 +47,11 @@ export default function SwipeScreen() {
     glow.value = 0;
     glow.value = withRepeat(withSequence(withTiming(1, { duration: 180 }), withTiming(0, { duration: 180 })), 4);
   }, [glow]);
+
+  const triggerConfetti = useCallback(() => {
+    if (Math.random() >= 0.33) return;
+    setConfettiBursts(prev => [...prev, { id: ++confettiId.current }]);
+  }, []);
 
   const loadInitial = useCallback(async () => {
     setLoading(true);
@@ -96,11 +103,12 @@ export default function SwipeScreen() {
       const next = prev + 1;
       if (next > 0 && next % 10 === 0) {
         triggerGlow();
+        triggerConfetti();
       }
       return next;
     });
     handleAfterSwipe(false);
-  }, [handleAfterSwipe, triggerGlow]);
+  }, [handleAfterSwipe, triggerConfetti, triggerGlow]);
 
   const handleSwipeRight = useCallback(
     (card: Card) => {
@@ -113,6 +121,7 @@ export default function SwipeScreen() {
 
   const counterLabel = useMemo(() => t('swipe.counter', { count: leftCount }), [leftCount, t]);
   const streakLabel = useMemo(() => t('swipe.streak', { count: streak, best: bestStreak }), [bestStreak, streak, t]);
+  const leftProgress = useMemo(() => Math.min(1, (leftCount % 10) / 10), [leftCount]);
   const sprintLabel = useMemo(() => {
     if (!sprintEndsAt) return t('swipe.sprint.start');
     if (sprintRemaining <= 0) return t('swipe.sprint.ended');
@@ -185,6 +194,17 @@ export default function SwipeScreen() {
             />
           )}
         </View>
+
+        {confettiBursts.map(burst => (
+          <ConfettiBurst key={burst.id} onDone={() => setConfettiBursts(prev => prev.filter(item => item.id !== burst.id))} />
+        ))}
+
+        <View style={styles.progressBarSection}>
+          <ThemedText style={styles.progressLabel}>{t('swipe.progress', { current: leftCount % 10, target: 10 })}</ThemedText>
+          <View style={styles.progressTrack}>
+            <View style={[styles.progressFill, { width: `${leftProgress * 100}%` }]} />
+          </View>
+        </View>
       </ThemedView>
     </SafeAreaView>
   );
@@ -204,6 +224,73 @@ function CardView({ card }: { card: Card }) {
         </ThemedText>
         <ThemedText style={styles.cardText}>{card.text}</ThemedText>
       </View>
+    </View>
+  );
+}
+
+function ConfettiBurst({ onDone }: { onDone: () => void }) {
+  const { width, height } = useWindowDimensions();
+  const pieces = useMemo(() => {
+    const colors = ['#22c55e', '#a855f7', '#f59e0b', '#38bdf8', '#f472b6'];
+    return Array.from({ length: 16 }).map((_, index) => {
+      const delay = Math.random() * 150;
+      return {
+        id: index,
+        color: colors[index % colors.length],
+        left: Math.random() * width,
+        rotate: Math.random() * 360,
+        scale: 0.8 + Math.random() * 0.6,
+        delay,
+        translateY: new RNAnimated.Value(0),
+        opacity: new RNAnimated.Value(1),
+      };
+    });
+  }, [width]);
+
+  useEffect(() => {
+    pieces.forEach(piece => {
+      RNAnimated.timing(piece.translateY, {
+        toValue: height * 0.6 + Math.random() * 80,
+        duration: 700 + Math.random() * 300,
+        delay: piece.delay,
+        easing: RNEasing.out(RNEasing.quad),
+        useNativeDriver: true,
+      }).start();
+      RNAnimated.timing(piece.opacity, {
+        toValue: 0,
+        duration: 400,
+        delay: 500 + piece.delay,
+        easing: RNEasing.out(RNEasing.quad),
+        useNativeDriver: true,
+      }).start();
+    });
+
+    const cleanup = setTimeout(onDone, 1200);
+    return () => clearTimeout(cleanup);
+  }, [height, onDone, pieces]);
+
+  return (
+    <View style={StyleSheet.absoluteFill} pointerEvents="none">
+      {pieces.map(piece => (
+        <RNAnimated.View
+          key={piece.id}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: piece.left,
+            width: 10,
+            height: 18,
+            backgroundColor: piece.color,
+            borderRadius: 3,
+            opacity: piece.opacity,
+            transform: [
+              { translateY: piece.translateY },
+              { rotate: `${piece.rotate}deg` },
+              { scale: piece.scale },
+            ],
+          }}
+        />
+      ))}
     </View>
   );
 }
@@ -244,6 +331,24 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#e2e8f0',
     textAlign: 'center',
+  },
+  progressBarSection: {
+    width: '100%',
+    gap: 6,
+  },
+  progressLabel: {
+    color: '#cbd5e1',
+    fontSize: 14,
+  },
+  progressTrack: {
+    height: 10,
+    borderRadius: 12,
+    backgroundColor: '#1f2937',
+    overflow: 'hidden',
+  },
+  progressFill: {
+    height: '100%',
+    backgroundColor: '#22c55e',
   },
   counter: {
     paddingVertical: 10,

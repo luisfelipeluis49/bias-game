@@ -27,6 +27,7 @@
     "noMatch": "Sem match desta vez",
     "empty": "Carregando mais cartas...",
     "streak": "Sequência: {{count}} (melhor {{best}})",
+    "progress": "Próximo brilho: {{current}}/{{target}} deslizes à esquerda",
     "sprint": {
       "start": "Iniciar sprint de 60s",
       "timeLeft": "Sprint: {{seconds}}s restantes",

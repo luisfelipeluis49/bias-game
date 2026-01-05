@@ -15,6 +15,7 @@ const ROTATION = 18;
 const SWIPE_VELOCITY = 450;
 const ADVANCE_DEBOUNCE_MS = 120;
 const SWIPE_ANIMATION = { duration: 240, easing: Easing.out(Easing.cubic) };
+const FADE_IN_MS = 300;
 
 export type AnimatedStackProps<T> = {
   data: T[];
@@ -29,12 +30,12 @@ export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }
   const { width: screenWidth } = useWindowDimensions();
 
   const translateX = useSharedValue(0);
+  const cardOpacity = useSharedValue(1);
   const hiddenTranslateX = useMemo(() => screenWidth * 1.25, [screenWidth]);
   const swipeThreshold = useMemo(() => screenWidth * 0.2, [screenWidth]);
 
   const total = data.length;
   const currentProfile = total > 0 ? data[currentIndex % total] : undefined;
-  const nextProfile = total > 1 ? data[(currentIndex + 1) % total] : undefined;
 
   const rotate = useDerivedValue(
     () => `${interpolate(translateX.value, [-hiddenTranslateX, 0, hiddenTranslateX], [-ROTATION, 0, ROTATION])}deg`,
@@ -45,17 +46,7 @@ export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }
       { translateX: translateX.value },
       { rotate: rotate.value },
     ],
-  }));
-
-  const nextCardProgress = useDerivedValue(() => Math.min(Math.abs(translateX.value) / swipeThreshold, 1));
-
-  const nextCardStyle = useAnimatedStyle(() => ({
-    transform: [
-      {
-        scale: interpolate(nextCardProgress.value, [0, 1], [0.94, 1]),
-      },
-    ],
-    opacity: interpolate(nextCardProgress.value, [0, 1], [0.7, 1]),
+    opacity: cardOpacity.value,
   }));
 
   const likeOpacity = useDerivedValue(() =>
@@ -119,6 +110,7 @@ export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }
         translateX.value = withTiming(destination, SWIPE_ANIMATION, finished => {
           if (finished) {
             translateX.value = 0;
+            cardOpacity.value = 0;
             runOnJS(queueAdvance)();
           }
         });
@@ -136,12 +128,16 @@ export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }
 
   useEffect(() => {
     translateX.value = 0;
-  }, [currentIndex, translateX]);
+    cardOpacity.value = 0;
+    cardOpacity.value = withTiming(1, { duration: FADE_IN_MS, easing: Easing.out(Easing.quad) });
+  }, [cardOpacity, currentIndex, translateX]);
 
   useEffect(() => {
     setCurrentIndex(0);
     translateX.value = 0;
-  }, [total, translateX]);
+    cardOpacity.value = 0;
+    cardOpacity.value = withTiming(1, { duration: FADE_IN_MS, easing: Easing.out(Easing.quad) });
+  }, [cardOpacity, total, translateX]);
 
   useEffect(
     () => () => {
@@ -154,14 +150,6 @@ export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }
 
   return (
     <View style={styles.root}>
-      {nextProfile && (
-        <View style={styles.nextCardContainer} pointerEvents="none">
-          <Animated.View key={`next-${currentIndex + 1}`} style={[styles.animatedCard, nextCardStyle]}>
-            {renderItem({ item: nextProfile })}
-          </Animated.View>
-        </View>
-      )}
-
       {currentProfile && (
         <GestureDetector gesture={panGesture}>
           <Animated.View key={`current-${currentIndex}`} style={[styles.animatedCard, cardStyle]}>
@@ -193,11 +181,6 @@ const styles = StyleSheet.create({
   animatedCard: {
     width: '90%',
     height: '70%',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  nextCardContainer: {
-    ...StyleSheet.absoluteFillObject,
     justifyContent: 'center',
     alignItems: 'center',
   },
