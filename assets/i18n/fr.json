@@ -12,11 +12,11 @@
     "title": "Comment jouer",
     "subtitle": "Ta mission : swipe à gauche sur les phrases biaisées ou méchantes, et à droite sur celles qui sont positives et inclusives.",
     "bullets": [
-      "Swipe gauche pour passer et ajouter 1 point.",
-      "Toutes les 10 swipes gauche, le compteur brille en vert.",
-      "Swipe droite pour voir si c'est un match; si oui, le compteur revient à 0.",
-      "Cartes infinies; de nouvelles arrivent pendant que tu joues.",
-      "Contenu 100% local: blagues et images."
+      "Swipe gauche pour passer et ajouter 1 point; swipe droite pour tester le match (en cas de match, le compteur revient à 0).",
+      "Toutes les 10 swipes gauche, le compteur brille et des confettis célèbrent les jalons.",
+      "Sprint : lance un sprint de 60s pour faire un max de points; le chrono s'arrête tout seul.",
+      "Notifications : active les rappels qui suivent la chaleur du moment de la journée (doux la journée, plus chauds le soir) ; le mode test envoie toutes les ~30s.",
+      "Messages d'amour : toutes les 15 swipes gauche (hors sprint) un message tendre apparaît; les cartes sont infinies et locales."
     ],
     "languageLabel": "Langue",
     "start": "Commencer"

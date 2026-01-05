@@ -16,6 +16,7 @@
   - Swipe: [app/(tabs)/index.tsx](app/(tabs)/index.tsx) uses AnimatedStack + card-factory to generate infinite local cards (10 initial, +3 every 3 swipes), persists deck state per language, left counter glow every 10, random match text on right swipe.
   - Rules: [app/(tabs)/rules.tsx](app/(tabs)/rules.tsx) localized copy, language pills (EN/FR/PT-BR), safe-area layout.
 - i18n: [hooks/use-i18n.tsx](hooks/use-i18n.tsx) with AsyncStorage persistence, device locale detect, JSON resources in assets/i18n (en/fr/pt-BR), wired via app/_layout provider.
+- Notifications: [utils/notification-scheduler.ts](utils/notification-scheduler.ts) schedules hourly local notifications (heat 0.0 from 5AM-10PM, heat 1.0 from 11PM-4AM) using `expo-notifications`.
 - Assets/data: jokes per language in [assets/data/jokes.ts](assets/data/jokes.ts); AVIF deck in [assets/images/cards/compressed](assets/images/cards/compressed); overlay icons LIKE/nope; launch image [assets/images/launch.png](assets/images/launch.png) configured in app.json.
 - Navigation/layout: [app/_layout.tsx](app/_layout.tsx) wraps GestureHandlerRootView, ThemeProvider, I18nProvider, stack initial route loading. Tabs defined in [app/(tabs)/_layout.tsx](app/(tabs)/_layout.tsx) for Swipe + Rules with localized labels/icons.
 

@@ -12,11 +12,11 @@
     "title": "How to play",
     "subtitle": "Those are the main rules:",
     "bullets": [
-      "Swipe left to skip and add 1 point.",
-      "Every 10 left swipes the counter glows bright green.",
-      "Swipe right to see if it's a match; if match, counter resets to 0.",
-      "Cards are infinite; new ones appear as you keep swiping.",
-      "Content uses local jokes, stories and images only."
+      "Swipe left to skip and add 1 point; swipe right to check for a match (match resets to 0).",
+      "Every 10 left swipes the counter glows and confetti celebrates milestones.",
+      "Sprint mode: tap the 60s sprint to race for points; the timer ends automatically.",
+      "Notifications: allow reminders that follow the day's heat (softer by day, warmer at night); there's also a quick test mode that fires about every 30s.",
+      "Loving messages: every 15 left swipes outside sprint, a love note pops up; cards stay infinite and fully local."
     ],
     "languageLabel": "Language",
     "start": "Start swiping"

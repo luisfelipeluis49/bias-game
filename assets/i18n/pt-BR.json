@@ -12,11 +12,11 @@
     "title": "Como jogar",
     "subtitle": "Estas são as regras principais:",
     "bullets": [
-      "Deslize para a esquerda para pular e somar 1 ponto.",
-      "A cada 10 deslizadas para a esquerda o contador brilha em verde.",
-      "Deslize para a direita para ver se deu match; se der, o contador volta para 0.",
-      "Cartas infinitas; novas aparecem enquanto você joga.",
-      "Conteúdo 100% local: piadas, histórias e imagens."
+      "Deslize para a esquerda para pular e somar 1 ponto; direita para ver se deu match (se der, o contador volta a 0).",
+      "A cada 10 deslizes para a esquerda o contador brilha e rolam confetes para comemorar.",
+      "Sprint: ative o sprint de 60s para correr atrás de pontos; o cronômetro termina sozinho.",
+      "Notificações: permita lembretes que seguem o calor do dia (suave de dia, mais quente à noite).",
+      "Mensagens de carinho: a cada 15 esquerdas (fora do sprint) aparece um recado fofo."
     ],
     "languageLabel": "Idioma",
     "start": "Começar"

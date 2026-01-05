@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ActivityIndicator, Animated as RNAnimated, Easing as RNEasing, Image, Pressable, StyleSheet, View, useWindowDimensions } from 'react-native';
+import { ActivityIndicator, Image, Pressable, Animated as RNAnimated, Easing as RNEasing, StyleSheet, View, useWindowDimensions } from 'react-native';
 import Animated, { interpolateColor, useAnimatedStyle, useSharedValue, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import loveMessagesData from '@/assets/data/love_messages.json';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { AnimatedStack } from '@/components/tinder/animated-stack';
@@ -12,7 +13,7 @@ import type { Card } from '@/utils/card-factory';
 import { generateCards, resetDeck } from '@/utils/card-factory';
 
 const INITIAL_BATCH = 10;
-const REFILL_EVERY_SWIPES = 3;
+// const REFILL_EVERY_SWIPES = 3; // Unused constant removed
 const REFILL_COUNT = 3;
 const MATCH_PROBABILITY = 0.45;
 const BASE_COUNTER_COLOR = '#0f172a';
@@ -31,7 +32,14 @@ export default function SwipeScreen() {
   const [sprintEndsAt, setSprintEndsAt] = useState<number | null>(null);
   const [sprintRemaining, setSprintRemaining] = useState(0);
   const [confettiBursts, setConfettiBursts] = useState<{ id: number }[]>([]);
+  const [loveFlash, setLoveFlash] = useState<{ text: string; day: string } | null>(null);
+  const loveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const confettiId = useRef(0);
+
+    const calmLoveMessages = useMemo(() => {
+      const list = loveMessagesData as { text: string; day: string; emoji: string; heat: number }[];
+      return list.filter(item => item.heat < 1);
+    }, []);
 
   const glow = useSharedValue(0);
 
@@ -105,10 +113,18 @@ export default function SwipeScreen() {
         triggerGlow();
         triggerConfetti();
       }
+      if (next > 0 && next % 15 === 0 && !sprintEndsAt) {
+        const pick = calmLoveMessages[Math.floor(Math.random() * calmLoveMessages.length)];
+        if (pick) {
+          setLoveFlash({ text: pick.text, day: pick.day });
+          if (loveTimer.current) clearTimeout(loveTimer.current);
+          loveTimer.current = setTimeout(() => setLoveFlash(null), 5000);
+        }
+      }
       return next;
     });
     handleAfterSwipe(false);
-  }, [handleAfterSwipe, triggerConfetti, triggerGlow]);
+  }, [calmLoveMessages, handleAfterSwipe, sprintEndsAt, triggerConfetti, triggerGlow]);
 
   const handleSwipeRight = useCallback(
     (card: Card) => {
@@ -137,7 +153,7 @@ export default function SwipeScreen() {
     const end = Date.now() + SPRINT_DURATION_MS;
     setSprintEndsAt(end);
     setSprintRemaining(Math.ceil(SPRINT_DURATION_MS / 1000));
-  }, []);
+  }, [sprintEndsAt]);
 
   useEffect(() => {
     if (!sprintEndsAt) return undefined;
@@ -151,6 +167,12 @@ export default function SwipeScreen() {
     }, 300);
     return () => clearInterval(id);
   }, [sprintEndsAt]);
+
+  useEffect(() => {
+    return () => {
+      if (loveTimer.current) clearTimeout(loveTimer.current);
+    };
+  }, []);
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -194,6 +216,15 @@ export default function SwipeScreen() {
             />
           )}
         </View>
+
+        {loveFlash && (
+          <ThemedView style={styles.loveBanner}>
+            <ThemedText type="subtitle" style={styles.loveTitle}>
+              ❤️ {loveFlash.day}
+            </ThemedText>
+            <ThemedText style={styles.loveText}>{loveFlash.text}</ThemedText>
+          </ThemedView>
+        )}
 
         {confettiBursts.map(burst => (
           <ConfettiBurst key={burst.id} onDone={() => setConfettiBursts(prev => prev.filter(item => item.id !== burst.id))} />
@@ -349,6 +380,23 @@ const styles = StyleSheet.create({
   progressFill: {
     height: '100%',
     backgroundColor: '#22c55e',
+  },
+  loveBanner: {
+    width: '100%',
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#334155',
+    backgroundColor: '#0f172a',
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    gap: 6,
+  },
+  loveTitle: {
+    color: '#f472b6',
+  },
+  loveText: {
+    color: '#e2e8f0',
+    lineHeight: 20,
   },
   counter: {
     paddingVertical: 10,
