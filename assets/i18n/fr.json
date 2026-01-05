@@ -25,7 +25,13 @@
     "counter": "Swipes gauche : {{count}}",
     "match": "Match !",
     "noMatch": "Pas de match cette fois",
-    "empty": "Chargement de nouvelles cartes..."
+    "empty": "Chargement de nouvelles cartes...",
+    "streak": "Série : {{count}} (meilleur {{best}})",
+    "sprint": {
+      "start": "Lancer un sprint de 60s",
+      "timeLeft": "Sprint : {{seconds}}s restantes",
+      "ended": "Sprint terminé"
+    }
   },
   "card": {
     "kind": {

@@ -1,17 +1,20 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { StyleSheet, View, useWindowDimensions } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
-    interpolate,
-    runOnJS,
-    useAnimatedStyle,
-    useDerivedValue,
-    useSharedValue,
-    withSpring,
+  Easing,
+  interpolate,
+  runOnJS,
+  useAnimatedStyle,
+  useDerivedValue,
+  useSharedValue,
+  withTiming,
 } from 'react-native-reanimated';
 
 const ROTATION = 18;
-const SWIPE_VELOCITY = 800;
+const SWIPE_VELOCITY = 450;
+const ADVANCE_DEBOUNCE_MS = 120;
+const SWIPE_ANIMATION = { duration: 240, easing: Easing.out(Easing.cubic) };
 
 export type AnimatedStackProps<T> = {
   data: T[];
@@ -22,11 +25,12 @@ export type AnimatedStackProps<T> = {
 
 export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }: AnimatedStackProps<T>) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const advanceTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const { width: screenWidth } = useWindowDimensions();
 
   const translateX = useSharedValue(0);
   const hiddenTranslateX = useMemo(() => screenWidth * 1.25, [screenWidth]);
-  const swipeThreshold = useMemo(() => screenWidth * 0.25, [screenWidth]);
+  const swipeThreshold = useMemo(() => screenWidth * 0.2, [screenWidth]);
 
   const total = data.length;
   const currentProfile = total > 0 ? data[currentIndex % total] : undefined;
@@ -43,22 +47,51 @@ export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }
     ],
   }));
 
+  const nextCardProgress = useDerivedValue(() => Math.min(Math.abs(translateX.value) / swipeThreshold, 1));
+
   const nextCardStyle = useAnimatedStyle(() => ({
     transform: [
       {
-        scale: interpolate(translateX.value, [-hiddenTranslateX, 0, hiddenTranslateX], [1, 0.9, 1]),
+        scale: interpolate(nextCardProgress.value, [0, 1], [0.94, 1]),
       },
     ],
-    opacity: interpolate(translateX.value, [-hiddenTranslateX, 0, hiddenTranslateX], [1, 0.6, 1]),
+    opacity: interpolate(nextCardProgress.value, [0, 1], [0.7, 1]),
   }));
 
+  const likeOpacity = useDerivedValue(() =>
+    withTiming(translateX.value > 0 ? Math.min(translateX.value / (hiddenTranslateX / 3), 1) : 0, {
+      duration: 140,
+      easing: Easing.out(Easing.quad),
+    }),
+  );
+
+  const nopeOpacity = useDerivedValue(() =>
+    withTiming(translateX.value < 0 ? Math.min(-translateX.value / (hiddenTranslateX / 3), 1) : 0, {
+      duration: 140,
+      easing: Easing.out(Easing.quad),
+    }),
+  );
+
   const likeStyle = useAnimatedStyle(() => ({
-    opacity: interpolate(translateX.value, [0, hiddenTranslateX / 4], [0, 1]),
+    opacity: likeOpacity.value,
   }));
 
   const nopeStyle = useAnimatedStyle(() => ({
-    opacity: interpolate(translateX.value, [0, -hiddenTranslateX / 4], [0, 1]),
+    opacity: nopeOpacity.value,
   }));
+
+  const queueAdvance = useCallback(() => {
+    if (advanceTimeout.current) {
+      clearTimeout(advanceTimeout.current);
+    }
+    advanceTimeout.current = setTimeout(() => {
+      setCurrentIndex(index => {
+        if (total === 0) return 0;
+        const next = index + 1;
+        return next >= total ? 0 : next;
+      });
+    }, ADVANCE_DEBOUNCE_MS);
+  }, [total]);
 
   const panGesture = useMemo(() => {
     if (total === 0) {
@@ -75,7 +108,7 @@ export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }
         const hasDistance = Math.abs(translationX) > swipeThreshold;
 
         if (!hasVelocity && !hasDistance) {
-          translateX.value = withSpring(0);
+          translateX.value = withTiming(0, SWIPE_ANIMATION);
           return;
         }
 
@@ -83,14 +116,10 @@ export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }
         const destination = hiddenTranslateX * direction;
         const swipedProfile = currentProfile;
 
-        translateX.value = withSpring(destination, { velocity: velocityX }, finished => {
+        translateX.value = withTiming(destination, SWIPE_ANIMATION, finished => {
           if (finished) {
             translateX.value = 0;
-            runOnJS(setCurrentIndex)(index => {
-              if (total === 0) return 0;
-              const next = index + 1;
-              return next >= total ? 0 : next;
-            });
+            runOnJS(queueAdvance)();
           }
         });
 
@@ -103,7 +132,7 @@ export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }
           runOnJS(callback)(swipedProfile);
         }
       });
-  }, [currentProfile, hiddenTranslateX, onSwipeLeft, onSwipeRight, swipeThreshold, total, translateX]);
+  }, [currentProfile, hiddenTranslateX, onSwipeLeft, onSwipeRight, queueAdvance, swipeThreshold, total, translateX]);
 
   useEffect(() => {
     translateX.value = 0;
@@ -113,6 +142,15 @@ export function AnimatedStack<T>({ data, renderItem, onSwipeLeft, onSwipeRight }
     setCurrentIndex(0);
     translateX.value = 0;
   }, [total, translateX]);
+
+  useEffect(
+    () => () => {
+      if (advanceTimeout.current) {
+        clearTimeout(advanceTimeout.current);
+      }
+    },
+    [],
+  );
 
   return (
     <View style={styles.root}>

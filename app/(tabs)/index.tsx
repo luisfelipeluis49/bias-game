@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { ActivityIndicator, Image, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, Image, Pressable, StyleSheet, View } from 'react-native';
 import Animated, { interpolateColor, useAnimatedStyle, useSharedValue, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -17,6 +17,7 @@ const REFILL_COUNT = 3;
 const MATCH_PROBABILITY = 0.45;
 const BASE_COUNTER_COLOR = '#0f172a';
 const GLOW_COLOR = '#22c55e';
+const SPRINT_DURATION_MS = 60_000;
 
 export default function SwipeScreen() {
   const { t, lang } = useI18n();
@@ -24,8 +25,11 @@ export default function SwipeScreen() {
   const [loading, setLoading] = useState(true);
   const [status, setStatus] = useState<string | null>(null);
   const [leftCount, setLeftCount] = useState(0);
-  const [, setSwipeStreak] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
   const [refilling, setRefilling] = useState(false);
+  const [sprintEndsAt, setSprintEndsAt] = useState<number | null>(null);
+  const [sprintRemaining, setSprintRemaining] = useState(0);
 
   const glow = useSharedValue(0);
 
@@ -47,7 +51,10 @@ export default function SwipeScreen() {
     setCards([]);
     setStatus(null);
     setLeftCount(0);
-    setSwipeStreak(0);
+    setStreak(0);
+    setBestStreak(0);
+    setSprintEndsAt(null);
+    setSprintRemaining(0);
     await resetDeck(lang);
     const { cards: firstBatch } = await generateCards(lang, INITIAL_BATCH);
     setCards(firstBatch);
@@ -69,23 +76,22 @@ export default function SwipeScreen() {
   const handleAfterSwipe = useCallback(
     (match: boolean) => {
       setCards(prev => prev.slice(1));
-      setSwipeStreak(prev => {
-        const next = prev + 1;
-        if (next >= REFILL_EVERY_SWIPES) {
-          maybeRefill();
-          return 0;
-        }
+      setStreak(prev => {
+        const next = match ? prev + 1 : 0;
+        setBestStreak(current => Math.max(current, next));
         return next;
       });
       if (match) {
         setLeftCount(0);
       }
+      maybeRefill();
     },
     [maybeRefill],
   );
 
   const handleSwipeLeft = useCallback(() => {
     setStatus(null);
+    setStreak(0);
     setLeftCount(prev => {
       const next = prev + 1;
       if (next > 0 && next % 10 === 0) {
@@ -106,6 +112,36 @@ export default function SwipeScreen() {
   );
 
   const counterLabel = useMemo(() => t('swipe.counter', { count: leftCount }), [leftCount, t]);
+  const streakLabel = useMemo(() => t('swipe.streak', { count: streak, best: bestStreak }), [bestStreak, streak, t]);
+  const sprintLabel = useMemo(() => {
+    if (!sprintEndsAt) return t('swipe.sprint.start');
+    if (sprintRemaining <= 0) return t('swipe.sprint.ended');
+    return t('swipe.sprint.timeLeft', { seconds: sprintRemaining });
+  }, [sprintEndsAt, sprintRemaining, t]);
+
+  const toggleSprint = useCallback(() => {
+    if (sprintEndsAt) {
+      setSprintEndsAt(null);
+      setSprintRemaining(0);
+      return;
+    }
+    const end = Date.now() + SPRINT_DURATION_MS;
+    setSprintEndsAt(end);
+    setSprintRemaining(Math.ceil(SPRINT_DURATION_MS / 1000));
+  }, []);
+
+  useEffect(() => {
+    if (!sprintEndsAt) return undefined;
+    const id = setInterval(() => {
+      const remainingMs = sprintEndsAt - Date.now();
+      const seconds = Math.max(0, Math.ceil(remainingMs / 1000));
+      setSprintRemaining(seconds);
+      if (remainingMs <= 0) {
+        setSprintEndsAt(null);
+      }
+    }, 300);
+    return () => clearInterval(id);
+  }, [sprintEndsAt]);
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -121,6 +157,12 @@ export default function SwipeScreen() {
               {status}
             </ThemedText>
           )}
+          <View style={styles.progressRow}>
+            <ThemedText style={styles.streakText}>{streakLabel}</ThemedText>
+            <Pressable onPress={toggleSprint} style={styles.sprintButton}>
+              <ThemedText style={styles.sprintText}>{sprintLabel}</ThemedText>
+            </Pressable>
+          </View>
         </View>
 
         <View style={styles.deck}>
@@ -180,6 +222,28 @@ const styles = StyleSheet.create({
   header: {
     alignItems: 'center',
     gap: 10,
+  },
+  progressRow: {
+    marginTop: 12,
+    gap: 8,
+    width: '100%',
+  },
+  streakText: {
+    fontSize: 14,
+    color: '#cbd5e1',
+  },
+  sprintButton: {
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#334155',
+    backgroundColor: '#0f172a',
+  },
+  sprintText: {
+    fontSize: 14,
+    color: '#e2e8f0',
+    textAlign: 'center',
   },
   counter: {
     paddingVertical: 10,
