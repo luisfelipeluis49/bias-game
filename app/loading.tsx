@@ -1,14 +1,30 @@
+import { useEffect, useState } from 'react';
+import { ActivityIndicator, StyleSheet, View } from 'react-native';
+import Animated, { Easing, useAnimatedStyle, useSharedValue, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
+
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { useI18n } from '@/hooks/use-i18n';
 import { preloadCardAssets } from '@/utils/preload-assets';
 import { Redirect } from 'expo-router';
-import { useEffect, useState } from 'react';
-import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
 export default function LoadingScreen() {
   const { t, ready } = useI18n();
   const [done, setDone] = useState(false);
+  const [delayDone, setDelayDone] = useState(false);
+
+  const blob1 = useSharedValue(1);
+  const blob2 = useSharedValue(0.8);
+
+  const blob1Style = useAnimatedStyle(() => ({
+    transform: [{ scale: blob1.value }],
+    opacity: 0.35 + 0.25 * blob1.value,
+  }));
+
+  const blob2Style = useAnimatedStyle(() => ({
+    transform: [{ scale: blob2.value }],
+    opacity: 0.25 + 0.2 * blob2.value,
+  }));
 
   useEffect(() => {
     const run = async () => {
@@ -18,13 +34,34 @@ export default function LoadingScreen() {
     run();
   }, []);
 
-  if (ready && done) {
+  useEffect(() => {
+    const timer = setTimeout(() => setDelayDone(true), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const timing = (val: typeof blob1) =>
+      (val.value = withRepeat(
+        withSequence(
+          withTiming(1.15, { duration: 1200, easing: Easing.inOut(Easing.ease) }),
+          withTiming(0.85, { duration: 1200, easing: Easing.inOut(Easing.ease) }),
+        ),
+        -1,
+        true,
+      ));
+
+    timing(blob1);
+    timing(blob2);
+  }, [blob1, blob2]);
+
+  if (ready && done && delayDone) {
     return <Redirect href="/(tabs)" />;
   }
 
   return (
     <ThemedView style={styles.container}>
-      <View style={styles.backdrop} />
+      <Animated.View style={[styles.backdrop, styles.backdropPink, blob1Style]} />
+      <Animated.View style={[styles.backdrop, styles.backdropCyan, blob2Style]} />
       <View style={styles.card}>
         <ThemedText type="title" style={styles.title}>
           {t('loading.title')}
@@ -48,9 +85,14 @@ const styles = StyleSheet.create({
     width: 420,
     height: 420,
     borderRadius: 210,
-    backgroundColor: '#a855f7',
     opacity: 0.25,
     transform: [{ scale: 1.1 }],
+  },
+  backdropPink: {
+    backgroundColor: '#f472b6',
+  },
+  backdropCyan: {
+    backgroundColor: '#22d3ee',
   },
   card: {
     width: '80%',

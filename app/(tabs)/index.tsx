@@ -149,13 +149,16 @@ export default function SwipeScreen() {
 }
 
 function CardView({ card }: { card: Card }) {
+  const { t } = useI18n();
+  const kindLabel = useMemo(() => t(`card.kind.${card.kind}`), [card.kind, t]);
+
   return (
     <View style={styles.card}>
       <Image source={card.image} style={styles.cardImage} resizeMode="cover" />
       <View style={styles.cardOverlay} />
       <View style={styles.cardContent}>
         <ThemedText type="title" style={styles.cardTitle}>
-          {card.kind === 'story' ? 'Story' : 'Joke'}
+          {kindLabel}
         </ThemedText>
         <ThemedText style={styles.cardText}>{card.text}</ThemedText>
       </View>
