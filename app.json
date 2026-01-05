@@ -4,7 +4,7 @@
     "slug": "bias-game",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/new-icon.png",
     "scheme": "biasgame",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
