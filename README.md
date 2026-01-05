@@ -1,50 +1,30 @@
-# Welcome to your Expo app 👋
+# Bia's Game (Expo Router)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Colorful, offline-first swipe game with localized rules and infinite joke/story cards. Screens: Launch/Loading → Swipe → Rules. All assets are local (AVIF deck), safe-area aware for modern devices.
 
-## Get started
+## Quick start
 
-1. Install dependencies
+- Install deps: `npm install`
+- Run: `npx expo start`
 
-   ```bash
-   npm install
-   ```
+## What’s implemented
 
-2. Start the app
+- Launch screen: [assets/images/launch.png](assets/images/launch.png) wired in [app.json](app.json) via `expo-splash-screen` (cover, dark-friendly).
+- Loading screen: [app/loading.tsx](app/loading.tsx) with animated blobs, local asset preload, 3s minimum display.
+- Swipe screen: [app/(tabs)/index.tsx](app/(tabs)/index.tsx) uses `card-factory` for infinite local cards (10 initial, +3 every 3 swipes), per-language deck persistence, left counter glow every 10, random match text on right swipe.
+- Rules screen: [app/(tabs)/rules.tsx](app/(tabs)/rules.tsx) with localized bullets and language pills (EN/FR/PT-BR).
+- i18n: [hooks/use-i18n.tsx](hooks/use-i18n.tsx) with AsyncStorage persistence and device locale detect; locale strings in [assets/i18n](assets/i18n).
+- Assets: AVIF deck at [assets/images/cards/compressed](assets/images/cards/compressed); local jokes/stories in [assets/data/jokes.ts](assets/data/jokes.ts); no remote fetches.
+- Navigation/layout: tabs for Swipe + Rules in [app/(tabs)/_layout.tsx](app/(tabs)/_layout.tsx); root stack starts at loading in [app/_layout.tsx](app/_layout.tsx#L1-L34); safe-area wrappers on primary screens.
 
-   ```bash
-   npx expo start
-   ```
+## Development notes
 
-In the output, you'll find options to open the app in a
+- Infinite deck: generated locally, no reuse until pool cycles; adds 3 new cards every 3 swipes after the initial 10.
+- Languages: English, French, Portuguese (Brazil). Language persisted via AsyncStorage; defaults to device locale.
+- Safe areas: key screens use `react-native-safe-area-context` padding.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Commands
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Install: `npm install`
+- Start dev: `npx expo start`
+- Convert new card images to AVIF: `./scripts/convert-to-avif.sh` (reads `assets/images/cards/original`, writes `compressed`, keeps originals).

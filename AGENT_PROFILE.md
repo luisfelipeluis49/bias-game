@@ -9,46 +9,29 @@
 
 ## Project Context
 
-- App type: Expo Router project (tabs). Swipe deck and matches ported from legacy RN app.
-- Product note: bias-game is a Tinder-inspired swipe game for Bia (not real matching). Only swipe gestures matter.
-- Key screens:
-  - Swipe tab: app/(tabs)/index.tsx uses AnimatedStack + TinderCard with data from assets/data/users.ts, includes left-swipe counter, right-swipe match message (random), and glow every 10 left swipes; right swipe resets counter to 0. This is the only tab shown.
-- Components:
-  - Gesture/reanimated stack: components/tinder/animated-stack.tsx (uses GestureDetector, overlays in assets/images/LIKE.png and assets/images/nope.png).
-  - Card UI: components/tinder/card.tsx.
-- Navigation/layout: app/(tabs)/_layout.tsx (tab labels Swipe/Matches); app/_layout.tsx wraps app in GestureHandlerRootView and ThemeProvider.
-- Assets/data: assets/images/, assets/data/users.ts.
-
-## File Structure (src overview)
-
-- app/ — Expo Router entry points.
-  - [app/_layout.tsx](app/_layout.tsx): Root stack; wraps app in GestureHandlerRootView, ThemeProvider (light/dark), StatusBar, and declares `(tabs)` + `modal` routes.
-  - [app/modal.tsx](app/modal.tsx): Simple modal screen with themed text and back link.
-  - (tabs)/ — Tab navigator and screens.
-    - [_layout.tsx](app/(tabs)/_layout.tsx): Tabs with HapticTab button; single tab “Swipe”.
-    - [index.tsx](app/(tabs)/index.tsx): Swipe game screen. Counter for left swipes, glow every 10, random match/no-match message on right swipes, resets counter on right. Renders AnimatedStack + TinderCard with user data.
-    - [explore.tsx](app/(tabs)/explore.tsx): Starter demo (parallax, collapsible panels, docs links). Not surfaced in tabs.
+- App type: Expo Router tabs app with safe-area aware screens (loading, swipe, rules). All assets are local; no network fetches.
+- Product note: bias-game is a swipe game that surfaces inclusive vs biased statements; cards are jokes/stories/images, not people.
+- Key screens (current):
+  - Loading: [app/loading.tsx](app/loading.tsx) with animated colorful blobs, preloads card assets, enforces 3s minimum before redirect.
+  - Swipe: [app/(tabs)/index.tsx](app/(tabs)/index.tsx) uses AnimatedStack + card-factory to generate infinite local cards (10 initial, +3 every 3 swipes), persists deck state per language, left counter glow every 10, random match text on right swipe.
+  - Rules: [app/(tabs)/rules.tsx](app/(tabs)/rules.tsx) localized copy, language pills (EN/FR/PT-BR), safe-area layout.
+- i18n: [hooks/use-i18n.tsx](hooks/use-i18n.tsx) with AsyncStorage persistence, device locale detect, JSON resources in assets/i18n (en/fr/pt-BR), wired via app/_layout provider.
+- Assets/data: jokes per language in [assets/data/jokes.ts](assets/data/jokes.ts); AVIF deck in [assets/images/cards/compressed](assets/images/cards/compressed); overlay icons LIKE/nope; launch image [assets/images/launch.png](assets/images/launch.png) configured in app.json.
+- Navigation/layout: [app/_layout.tsx](app/_layout.tsx) wraps GestureHandlerRootView, ThemeProvider, I18nProvider, stack initial route loading. Tabs defined in [app/(tabs)/_layout.tsx](app/(tabs)/_layout.tsx) for Swipe + Rules with localized labels/icons.
 
 - components/ — UI building blocks.
-  - Theming: [themed-text.tsx](components/themed-text.tsx), [themed-view.tsx](components/themed-view.tsx) use useThemeColor to style text/views per light/dark.
-  - Gestures/stack: [tinder/animated-stack.tsx](components/tinder/animated-stack.tsx) swipe logic; [tinder/card.tsx](components/tinder/card.tsx) profile card.
-  - UX helpers: [haptic-tab.tsx](components/haptic-tab.tsx) adds haptics to tab presses; [external-link.tsx](components/external-link.tsx) opens links via in-app browser; [ui/collapsible.tsx](components/ui/collapsible.tsx) toggled sections.
-  - Icons: [ui/icon-symbol.tsx](components/ui/icon-symbol.tsx) (SF Symbols on iOS), [ui/icon-symbol.ios.tsx](components/ui/icon-symbol.ios.tsx) native SymbolView, platform fallback mapping to MaterialIcons.
-  - Visuals: [hello-wave.tsx](components/hello-wave.tsx) animated wave emoji; [parallax-scroll-view.tsx](components/parallax-scroll-view.tsx) parallax header wrapper.
-
+  - Theming: [components/themed-text.tsx](components/themed-text.tsx), [components/themed-view.tsx](components/themed-view.tsx).
+  - Gestures/stack: [components/tinder/animated-stack.tsx](components/tinder/animated-stack.tsx); card rendering now uses local jokes/images (see swipe screen + card-factory).
+  - UX helpers: haptic tab, external link, collapsible, icon-symbol mapping.
 - assets/
-  - data: [data/users.ts](assets/data/users.ts) sample user profiles.
-  - images: includes overlays LIKE.png / nope.png and starter logos.
-
-- hooks/ — theming helpers.
-  - [use-color-scheme.ts](hooks/use-color-scheme.ts) (platform), [use-color-scheme.web.ts](hooks/use-color-scheme.web.ts) (web hydration-safe), [use-theme-color.ts](hooks/use-theme-color.ts) resolves theme colors from constants.
-
-- constants/
-  - [theme.ts](constants/theme.ts) color palette and platform font names.
+  - data: legacy users kept but unused for cards; active jokes in [assets/data/jokes.ts](assets/data/jokes.ts).
+  - images: AVIF deck under cards/compressed; launch.png; overlays LIKE.png / nope.png.
+- hooks: theming helpers + i18n provider/persistence.
+- constants: theme colors and platform fonts.
 
 ## Detailed File Explanations
 
-### app/_layout.tsx
+### app/_layout.tsx (root)
 
 Root navigation wrapper. Uses GestureHandlerRootView to enable gestures, ThemeProvider with light/dark themes from useColorScheme, declares Stack with tabs + modal, and StatusBar setup. Entry point for Expo Router navigation.
 
@@ -58,19 +41,25 @@ Simple modal screen showing a title and a link back to root using expo-router Li
 
 ### app/(tabs)/_layout.tsx
 
-Configures bottom tabs: active tint from Colors per theme, header hidden, HapticTab for press feedback. Single tab: “Swipe” with flame icon.
+Tabs: Swipe + Rules, localized titles, icons flame/book, haptic button, header hidden.
 
 ### app/(tabs)/index.tsx (Swipe game)
 
-- State: left-swipe counter, status text, glow flag; shared value `glow` for animation.
-- Glow: interpolateColor + scale/shadow on counter; triggerGlow runs a repeated sequence via withRepeat/withTiming.
-- Left swipe: clears status, increments counter, every 10 triggers glow.
-- Right swipe: random match (`MATCH_PROBABILITY`), sets status text, resets counter and glow.
-- Renders top bar with animated counter + optional status; below, AnimatedStack renders TinderCard for each user.
+- Uses `card-factory` to generate/persist infinite cards (10 initial, +3 per 3 swipes) with no reuse until pool cycles; per-language deck state via AsyncStorage.
+- Left counter glows every 10; right swipe random match; i18n strings for counter/match texts; safe-area container.
+- Renders local images/jokes only; uses AnimatedStack gesture engine.
 
-### app/(tabs)/explore.tsx
+### app/(tabs)/rules.tsx
 
-Template demo: ParallaxScrollView header with IconSymbol, Collapsible sections explaining routing, platforms, images, dark/light, animations; uses ExternalLink and HelloWave reference.
+- Localized rules bullets, language pills (EN/FR/PT-BR), CTA to swipe, safe-area padding.
+
+### app/loading.tsx
+
+- Animated colorful blobs, asset preload, 3s minimum display before redirect to tabs.
+
+### app/_layout.tsx
+
+- Root stack with loading as initial; wraps GestureHandlerRootView, I18nProvider, ThemeProvider; tabs + modal routes.
 
 ### components/tinder/animated-stack.tsx (Swipe engine)
 
@@ -116,9 +105,9 @@ Disclosure widget: toggles isOpen; heading shows chevron icon rotated when open;
 - iOS: icon-symbol.ios.tsx uses SymbolView with tintColor/weight.
 - Android/web: icon-symbol.tsx maps SF Symbol names to MaterialIcons equivalents for consistent icons.
 
-### assets/data/users.ts
+### assets/data/jokes.ts
 
-Static array of sample users with id/name/image/bio, exported with type User.
+Localized joke/story bank powering card generation (no translations reused across languages).
 
 ### constants/theme.ts
 
@@ -143,6 +132,10 @@ Chooses theme color by name with optional overrides per theme; uses useColorSche
 
 - Install: npm install
 - Run: npx expo start
+
+## Current status / TODO
+
+- Done: i18n (EN/FR/PT-BR) with persistence; safe-area screens (loading/swipe/rules); infinite local card generation with persistence; AVIF asset pipeline + compressed deck; launch/splash image configured; navigation reduced to Swipe+Rules.
 
 ## Testing/Verification
 
