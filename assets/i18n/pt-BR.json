@@ -26,5 +26,14 @@
     "match": "Match!",
     "noMatch": "Sem match desta vez",
     "empty": "Carregando mais cartas..."
+  },
+  "card": {
+    "kind": {
+      "story": "História",
+      "joke": "Piada",
+      "riddle": "Charada",
+      "quote": "Citação",
+      "fact": "Fato"
+    }
   }
 }

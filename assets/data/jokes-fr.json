@@ -1,0 +1,2502 @@
+[
+  {
+    "id": "fr-j-001",
+    "kind": "joke",
+    "text": "Blague 1 : Pourquoi le dev préfère l'ombre ? La lumière attire les bugs."
+  },
+  {
+    "id": "fr-j-002",
+    "kind": "joke",
+    "text": "Blague 2 : Un serveur entre dans un bar : 503 Service Unavailable."
+  },
+  {
+    "id": "fr-j-003",
+    "kind": "joke",
+    "text": "Blague 3 : Comment appelle-t-on du code propre ? Une légende documentée."
+  },
+  {
+    "id": "fr-j-004",
+    "kind": "joke",
+    "text": "Blague 4 : Quel est le comble pour un café ? Se faire mugger."
+  },
+  {
+    "id": "fr-j-005",
+    "kind": "joke",
+    "text": "Blague 5 : Pourquoi les tableaux sont modestes ? Ils se mettent à l'index."
+  },
+  {
+    "id": "fr-j-006",
+    "kind": "joke",
+    "text": "Blague 6 : Un wifi timide demande : on se connecte ?"
+  },
+  {
+    "id": "fr-j-007",
+    "kind": "joke",
+    "text": "Blague 7 : Les escalators sont des escaliers en pause."
+  },
+  {
+    "id": "fr-j-008",
+    "kind": "joke",
+    "text": "Blague 8 : Pourquoi les fantômes aiment l'ascenseur ? Ça remonte le moral."
+  },
+  {
+    "id": "fr-j-009",
+    "kind": "joke",
+    "text": "Blague 9 : Un calendrier débordé est plein de rendez-vous."
+  },
+  {
+    "id": "fr-j-010",
+    "kind": "joke",
+    "text": "Blague 10 : Le chat du dev s'appelle Cache, il disparaît souvent."
+  },
+  {
+    "id": "fr-j-011",
+    "kind": "joke",
+    "text": "Blague 11 : Pourquoi le dev préfère l'ombre ? La lumière attire les bugs."
+  },
+  {
+    "id": "fr-j-012",
+    "kind": "joke",
+    "text": "Blague 12 : Un serveur entre dans un bar : 503 Service Unavailable."
+  },
+  {
+    "id": "fr-j-013",
+    "kind": "joke",
+    "text": "Blague 13 : Comment appelle-t-on du code propre ? Une légende documentée."
+  },
+  {
+    "id": "fr-j-014",
+    "kind": "joke",
+    "text": "Blague 14 : Quel est le comble pour un café ? Se faire mugger."
+  },
+  {
+    "id": "fr-j-015",
+    "kind": "joke",
+    "text": "Blague 15 : Pourquoi les tableaux sont modestes ? Ils se mettent à l'index."
+  },
+  {
+    "id": "fr-j-016",
+    "kind": "joke",
+    "text": "Blague 16 : Un wifi timide demande : on se connecte ?"
+  },
+  {
+    "id": "fr-j-017",
+    "kind": "joke",
+    "text": "Blague 17 : Les escalators sont des escaliers en pause."
+  },
+  {
+    "id": "fr-j-018",
+    "kind": "joke",
+    "text": "Blague 18 : Pourquoi les fantômes aiment l'ascenseur ? Ça remonte le moral."
+  },
+  {
+    "id": "fr-j-019",
+    "kind": "joke",
+    "text": "Blague 19 : Un calendrier débordé est plein de rendez-vous."
+  },
+  {
+    "id": "fr-j-020",
+    "kind": "joke",
+    "text": "Blague 20 : Le chat du dev s'appelle Cache, il disparaît souvent."
+  },
+  {
+    "id": "fr-j-021",
+    "kind": "joke",
+    "text": "Blague 21 : Pourquoi le dev préfère l'ombre ? La lumière attire les bugs."
+  },
+  {
+    "id": "fr-j-022",
+    "kind": "joke",
+    "text": "Blague 22 : Un serveur entre dans un bar : 503 Service Unavailable."
+  },
+  {
+    "id": "fr-j-023",
+    "kind": "joke",
+    "text": "Blague 23 : Comment appelle-t-on du code propre ? Une légende documentée."
+  },
+  {
+    "id": "fr-j-024",
+    "kind": "joke",
+    "text": "Blague 24 : Quel est le comble pour un café ? Se faire mugger."
+  },
+  {
+    "id": "fr-j-025",
+    "kind": "joke",
+    "text": "Blague 25 : Pourquoi les tableaux sont modestes ? Ils se mettent à l'index."
+  },
+  {
+    "id": "fr-j-026",
+    "kind": "joke",
+    "text": "Blague 26 : Un wifi timide demande : on se connecte ?"
+  },
+  {
+    "id": "fr-j-027",
+    "kind": "joke",
+    "text": "Blague 27 : Les escalators sont des escaliers en pause."
+  },
+  {
+    "id": "fr-j-028",
+    "kind": "joke",
+    "text": "Blague 28 : Pourquoi les fantômes aiment l'ascenseur ? Ça remonte le moral."
+  },
+  {
+    "id": "fr-j-029",
+    "kind": "joke",
+    "text": "Blague 29 : Un calendrier débordé est plein de rendez-vous."
+  },
+  {
+    "id": "fr-j-030",
+    "kind": "joke",
+    "text": "Blague 30 : Le chat du dev s'appelle Cache, il disparaît souvent."
+  },
+  {
+    "id": "fr-j-031",
+    "kind": "joke",
+    "text": "Blague 31 : Pourquoi le dev préfère l'ombre ? La lumière attire les bugs."
+  },
+  {
+    "id": "fr-j-032",
+    "kind": "joke",
+    "text": "Blague 32 : Un serveur entre dans un bar : 503 Service Unavailable."
+  },
+  {
+    "id": "fr-j-033",
+    "kind": "joke",
+    "text": "Blague 33 : Comment appelle-t-on du code propre ? Une légende documentée."
+  },
+  {
+    "id": "fr-j-034",
+    "kind": "joke",
+    "text": "Blague 34 : Quel est le comble pour un café ? Se faire mugger."
+  },
+  {
+    "id": "fr-j-035",
+    "kind": "joke",
+    "text": "Blague 35 : Pourquoi les tableaux sont modestes ? Ils se mettent à l'index."
+  },
+  {
+    "id": "fr-j-036",
+    "kind": "joke",
+    "text": "Blague 36 : Un wifi timide demande : on se connecte ?"
+  },
+  {
+    "id": "fr-j-037",
+    "kind": "joke",
+    "text": "Blague 37 : Les escalators sont des escaliers en pause."
+  },
+  {
+    "id": "fr-j-038",
+    "kind": "joke",
+    "text": "Blague 38 : Pourquoi les fantômes aiment l'ascenseur ? Ça remonte le moral."
+  },
+  {
+    "id": "fr-j-039",
+    "kind": "joke",
+    "text": "Blague 39 : Un calendrier débordé est plein de rendez-vous."
+  },
+  {
+    "id": "fr-j-040",
+    "kind": "joke",
+    "text": "Blague 40 : Le chat du dev s'appelle Cache, il disparaît souvent."
+  },
+  {
+    "id": "fr-j-041",
+    "kind": "joke",
+    "text": "Blague 41 : Pourquoi le dev préfère l'ombre ? La lumière attire les bugs."
+  },
+  {
+    "id": "fr-j-042",
+    "kind": "joke",
+    "text": "Blague 42 : Un serveur entre dans un bar : 503 Service Unavailable."
+  },
+  {
+    "id": "fr-j-043",
+    "kind": "joke",
+    "text": "Blague 43 : Comment appelle-t-on du code propre ? Une légende documentée."
+  },
+  {
+    "id": "fr-j-044",
+    "kind": "joke",
+    "text": "Blague 44 : Quel est le comble pour un café ? Se faire mugger."
+  },
+  {
+    "id": "fr-j-045",
+    "kind": "joke",
+    "text": "Blague 45 : Pourquoi les tableaux sont modestes ? Ils se mettent à l'index."
+  },
+  {
+    "id": "fr-j-046",
+    "kind": "joke",
+    "text": "Blague 46 : Un wifi timide demande : on se connecte ?"
+  },
+  {
+    "id": "fr-j-047",
+    "kind": "joke",
+    "text": "Blague 47 : Les escalators sont des escaliers en pause."
+  },
+  {
+    "id": "fr-j-048",
+    "kind": "joke",
+    "text": "Blague 48 : Pourquoi les fantômes aiment l'ascenseur ? Ça remonte le moral."
+  },
+  {
+    "id": "fr-j-049",
+    "kind": "joke",
+    "text": "Blague 49 : Un calendrier débordé est plein de rendez-vous."
+  },
+  {
+    "id": "fr-j-050",
+    "kind": "joke",
+    "text": "Blague 50 : Le chat du dev s'appelle Cache, il disparaît souvent."
+  },
+  {
+    "id": "fr-j-051",
+    "kind": "joke",
+    "text": "Blague 51 : Pourquoi le dev préfère l'ombre ? La lumière attire les bugs."
+  },
+  {
+    "id": "fr-j-052",
+    "kind": "joke",
+    "text": "Blague 52 : Un serveur entre dans un bar : 503 Service Unavailable."
+  },
+  {
+    "id": "fr-j-053",
+    "kind": "joke",
+    "text": "Blague 53 : Comment appelle-t-on du code propre ? Une légende documentée."
+  },
+  {
+    "id": "fr-j-054",
+    "kind": "joke",
+    "text": "Blague 54 : Quel est le comble pour un café ? Se faire mugger."
+  },
+  {
+    "id": "fr-j-055",
+    "kind": "joke",
+    "text": "Blague 55 : Pourquoi les tableaux sont modestes ? Ils se mettent à l'index."
+  },
+  {
+    "id": "fr-j-056",
+    "kind": "joke",
+    "text": "Blague 56 : Un wifi timide demande : on se connecte ?"
+  },
+  {
+    "id": "fr-j-057",
+    "kind": "joke",
+    "text": "Blague 57 : Les escalators sont des escaliers en pause."
+  },
+  {
+    "id": "fr-j-058",
+    "kind": "joke",
+    "text": "Blague 58 : Pourquoi les fantômes aiment l'ascenseur ? Ça remonte le moral."
+  },
+  {
+    "id": "fr-j-059",
+    "kind": "joke",
+    "text": "Blague 59 : Un calendrier débordé est plein de rendez-vous."
+  },
+  {
+    "id": "fr-j-060",
+    "kind": "joke",
+    "text": "Blague 60 : Le chat du dev s'appelle Cache, il disparaît souvent."
+  },
+  {
+    "id": "fr-j-061",
+    "kind": "joke",
+    "text": "Blague 61 : Pourquoi le dev préfère l'ombre ? La lumière attire les bugs."
+  },
+  {
+    "id": "fr-j-062",
+    "kind": "joke",
+    "text": "Blague 62 : Un serveur entre dans un bar : 503 Service Unavailable."
+  },
+  {
+    "id": "fr-j-063",
+    "kind": "joke",
+    "text": "Blague 63 : Comment appelle-t-on du code propre ? Une légende documentée."
+  },
+  {
+    "id": "fr-j-064",
+    "kind": "joke",
+    "text": "Blague 64 : Quel est le comble pour un café ? Se faire mugger."
+  },
+  {
+    "id": "fr-j-065",
+    "kind": "joke",
+    "text": "Blague 65 : Pourquoi les tableaux sont modestes ? Ils se mettent à l'index."
+  },
+  {
+    "id": "fr-j-066",
+    "kind": "joke",
+    "text": "Blague 66 : Un wifi timide demande : on se connecte ?"
+  },
+  {
+    "id": "fr-j-067",
+    "kind": "joke",
+    "text": "Blague 67 : Les escalators sont des escaliers en pause."
+  },
+  {
+    "id": "fr-j-068",
+    "kind": "joke",
+    "text": "Blague 68 : Pourquoi les fantômes aiment l'ascenseur ? Ça remonte le moral."
+  },
+  {
+    "id": "fr-j-069",
+    "kind": "joke",
+    "text": "Blague 69 : Un calendrier débordé est plein de rendez-vous."
+  },
+  {
+    "id": "fr-j-070",
+    "kind": "joke",
+    "text": "Blague 70 : Le chat du dev s'appelle Cache, il disparaît souvent."
+  },
+  {
+    "id": "fr-j-071",
+    "kind": "joke",
+    "text": "Blague 71 : Pourquoi le dev préfère l'ombre ? La lumière attire les bugs."
+  },
+  {
+    "id": "fr-j-072",
+    "kind": "joke",
+    "text": "Blague 72 : Un serveur entre dans un bar : 503 Service Unavailable."
+  },
+  {
+    "id": "fr-j-073",
+    "kind": "joke",
+    "text": "Blague 73 : Comment appelle-t-on du code propre ? Une légende documentée."
+  },
+  {
+    "id": "fr-j-074",
+    "kind": "joke",
+    "text": "Blague 74 : Quel est le comble pour un café ? Se faire mugger."
+  },
+  {
+    "id": "fr-j-075",
+    "kind": "joke",
+    "text": "Blague 75 : Pourquoi les tableaux sont modestes ? Ils se mettent à l'index."
+  },
+  {
+    "id": "fr-j-076",
+    "kind": "joke",
+    "text": "Blague 76 : Un wifi timide demande : on se connecte ?"
+  },
+  {
+    "id": "fr-j-077",
+    "kind": "joke",
+    "text": "Blague 77 : Les escalators sont des escaliers en pause."
+  },
+  {
+    "id": "fr-j-078",
+    "kind": "joke",
+    "text": "Blague 78 : Pourquoi les fantômes aiment l'ascenseur ? Ça remonte le moral."
+  },
+  {
+    "id": "fr-j-079",
+    "kind": "joke",
+    "text": "Blague 79 : Un calendrier débordé est plein de rendez-vous."
+  },
+  {
+    "id": "fr-j-080",
+    "kind": "joke",
+    "text": "Blague 80 : Le chat du dev s'appelle Cache, il disparaît souvent."
+  },
+  {
+    "id": "fr-j-081",
+    "kind": "joke",
+    "text": "Blague 81 : Pourquoi le dev préfère l'ombre ? La lumière attire les bugs."
+  },
+  {
+    "id": "fr-j-082",
+    "kind": "joke",
+    "text": "Blague 82 : Un serveur entre dans un bar : 503 Service Unavailable."
+  },
+  {
+    "id": "fr-j-083",
+    "kind": "joke",
+    "text": "Blague 83 : Comment appelle-t-on du code propre ? Une légende documentée."
+  },
+  {
+    "id": "fr-j-084",
+    "kind": "joke",
+    "text": "Blague 84 : Quel est le comble pour un café ? Se faire mugger."
+  },
+  {
+    "id": "fr-j-085",
+    "kind": "joke",
+    "text": "Blague 85 : Pourquoi les tableaux sont modestes ? Ils se mettent à l'index."
+  },
+  {
+    "id": "fr-j-086",
+    "kind": "joke",
+    "text": "Blague 86 : Un wifi timide demande : on se connecte ?"
+  },
+  {
+    "id": "fr-j-087",
+    "kind": "joke",
+    "text": "Blague 87 : Les escalators sont des escaliers en pause."
+  },
+  {
+    "id": "fr-j-088",
+    "kind": "joke",
+    "text": "Blague 88 : Pourquoi les fantômes aiment l'ascenseur ? Ça remonte le moral."
+  },
+  {
+    "id": "fr-j-089",
+    "kind": "joke",
+    "text": "Blague 89 : Un calendrier débordé est plein de rendez-vous."
+  },
+  {
+    "id": "fr-j-090",
+    "kind": "joke",
+    "text": "Blague 90 : Le chat du dev s'appelle Cache, il disparaît souvent."
+  },
+  {
+    "id": "fr-j-091",
+    "kind": "joke",
+    "text": "Blague 91 : Pourquoi le dev préfère l'ombre ? La lumière attire les bugs."
+  },
+  {
+    "id": "fr-j-092",
+    "kind": "joke",
+    "text": "Blague 92 : Un serveur entre dans un bar : 503 Service Unavailable."
+  },
+  {
+    "id": "fr-j-093",
+    "kind": "joke",
+    "text": "Blague 93 : Comment appelle-t-on du code propre ? Une légende documentée."
+  },
+  {
+    "id": "fr-j-094",
+    "kind": "joke",
+    "text": "Blague 94 : Quel est le comble pour un café ? Se faire mugger."
+  },
+  {
+    "id": "fr-j-095",
+    "kind": "joke",
+    "text": "Blague 95 : Pourquoi les tableaux sont modestes ? Ils se mettent à l'index."
+  },
+  {
+    "id": "fr-j-096",
+    "kind": "joke",
+    "text": "Blague 96 : Un wifi timide demande : on se connecte ?"
+  },
+  {
+    "id": "fr-j-097",
+    "kind": "joke",
+    "text": "Blague 97 : Les escalators sont des escaliers en pause."
+  },
+  {
+    "id": "fr-j-098",
+    "kind": "joke",
+    "text": "Blague 98 : Pourquoi les fantômes aiment l'ascenseur ? Ça remonte le moral."
+  },
+  {
+    "id": "fr-j-099",
+    "kind": "joke",
+    "text": "Blague 99 : Un calendrier débordé est plein de rendez-vous."
+  },
+  {
+    "id": "fr-j-100",
+    "kind": "joke",
+    "text": "Blague 100 : Le chat du dev s'appelle Cache, il disparaît souvent."
+  },
+  {
+    "id": "fr-s-001",
+    "kind": "story",
+    "text": "Histoire 1 : Elle a mis les sous-titres par défaut et le bureau est devenu plus calme."
+  },
+  {
+    "id": "fr-s-002",
+    "kind": "story",
+    "text": "Histoire 2 : Un collègue a testé au soleil; les contrastes ont été corrigés le jour même."
+  },
+  {
+    "id": "fr-s-003",
+    "kind": "story",
+    "text": "Histoire 3 : Un chauffeur de bus a appris bonjour en LSF, les matinées se sont éclaircies."
+  },
+  {
+    "id": "fr-s-004",
+    "kind": "story",
+    "text": "Histoire 4 : Ils ont décalé le lancement d'un jour pour ajouter un mode hors ligne."
+  },
+  {
+    "id": "fr-s-005",
+    "kind": "story",
+    "text": "Histoire 5 : Un étudiant a simplifié l'onboarding de sa grand-mère; elle a tout fait seule."
+  },
+  {
+    "id": "fr-s-006",
+    "kind": "story",
+    "text": "Histoire 6 : Un écran de chargement honnête a calmé les utilisateurs impatients."
+  },
+  {
+    "id": "fr-s-007",
+    "kind": "story",
+    "text": "Histoire 7 : Le bouton annuler upload a évité bien des sueurs froides."
+  },
+  {
+    "id": "fr-s-008",
+    "kind": "story",
+    "text": "Histoire 8 : Une vibration de succès a rassuré toute l'équipe terrain."
+  },
+  {
+    "id": "fr-s-009",
+    "kind": "story",
+    "text": "Histoire 9 : La police plus grande a fait sourire une classe entière."
+  },
+  {
+    "id": "fr-s-010",
+    "kind": "story",
+    "text": "Histoire 10 : Un mode nuit a sauvé les yeux d'un soigneur de nuit."
+  },
+  {
+    "id": "fr-s-011",
+    "kind": "story",
+    "text": "Histoire 11 : Elle a mis les sous-titres par défaut et le bureau est devenu plus calme."
+  },
+  {
+    "id": "fr-s-012",
+    "kind": "story",
+    "text": "Histoire 12 : Un collègue a testé au soleil; les contrastes ont été corrigés le jour même."
+  },
+  {
+    "id": "fr-s-013",
+    "kind": "story",
+    "text": "Histoire 13 : Un chauffeur de bus a appris bonjour en LSF, les matinées se sont éclaircies."
+  },
+  {
+    "id": "fr-s-014",
+    "kind": "story",
+    "text": "Histoire 14 : Ils ont décalé le lancement d'un jour pour ajouter un mode hors ligne."
+  },
+  {
+    "id": "fr-s-015",
+    "kind": "story",
+    "text": "Histoire 15 : Un étudiant a simplifié l'onboarding de sa grand-mère; elle a tout fait seule."
+  },
+  {
+    "id": "fr-s-016",
+    "kind": "story",
+    "text": "Histoire 16 : Un écran de chargement honnête a calmé les utilisateurs impatients."
+  },
+  {
+    "id": "fr-s-017",
+    "kind": "story",
+    "text": "Histoire 17 : Le bouton annuler upload a évité bien des sueurs froides."
+  },
+  {
+    "id": "fr-s-018",
+    "kind": "story",
+    "text": "Histoire 18 : Une vibration de succès a rassuré toute l'équipe terrain."
+  },
+  {
+    "id": "fr-s-019",
+    "kind": "story",
+    "text": "Histoire 19 : La police plus grande a fait sourire une classe entière."
+  },
+  {
+    "id": "fr-s-020",
+    "kind": "story",
+    "text": "Histoire 20 : Un mode nuit a sauvé les yeux d'un soigneur de nuit."
+  },
+  {
+    "id": "fr-s-021",
+    "kind": "story",
+    "text": "Histoire 21 : Elle a mis les sous-titres par défaut et le bureau est devenu plus calme."
+  },
+  {
+    "id": "fr-s-022",
+    "kind": "story",
+    "text": "Histoire 22 : Un collègue a testé au soleil; les contrastes ont été corrigés le jour même."
+  },
+  {
+    "id": "fr-s-023",
+    "kind": "story",
+    "text": "Histoire 23 : Un chauffeur de bus a appris bonjour en LSF, les matinées se sont éclaircies."
+  },
+  {
+    "id": "fr-s-024",
+    "kind": "story",
+    "text": "Histoire 24 : Ils ont décalé le lancement d'un jour pour ajouter un mode hors ligne."
+  },
+  {
+    "id": "fr-s-025",
+    "kind": "story",
+    "text": "Histoire 25 : Un étudiant a simplifié l'onboarding de sa grand-mère; elle a tout fait seule."
+  },
+  {
+    "id": "fr-s-026",
+    "kind": "story",
+    "text": "Histoire 26 : Un écran de chargement honnête a calmé les utilisateurs impatients."
+  },
+  {
+    "id": "fr-s-027",
+    "kind": "story",
+    "text": "Histoire 27 : Le bouton annuler upload a évité bien des sueurs froides."
+  },
+  {
+    "id": "fr-s-028",
+    "kind": "story",
+    "text": "Histoire 28 : Une vibration de succès a rassuré toute l'équipe terrain."
+  },
+  {
+    "id": "fr-s-029",
+    "kind": "story",
+    "text": "Histoire 29 : La police plus grande a fait sourire une classe entière."
+  },
+  {
+    "id": "fr-s-030",
+    "kind": "story",
+    "text": "Histoire 30 : Un mode nuit a sauvé les yeux d'un soigneur de nuit."
+  },
+  {
+    "id": "fr-s-031",
+    "kind": "story",
+    "text": "Histoire 31 : Elle a mis les sous-titres par défaut et le bureau est devenu plus calme."
+  },
+  {
+    "id": "fr-s-032",
+    "kind": "story",
+    "text": "Histoire 32 : Un collègue a testé au soleil; les contrastes ont été corrigés le jour même."
+  },
+  {
+    "id": "fr-s-033",
+    "kind": "story",
+    "text": "Histoire 33 : Un chauffeur de bus a appris bonjour en LSF, les matinées se sont éclaircies."
+  },
+  {
+    "id": "fr-s-034",
+    "kind": "story",
+    "text": "Histoire 34 : Ils ont décalé le lancement d'un jour pour ajouter un mode hors ligne."
+  },
+  {
+    "id": "fr-s-035",
+    "kind": "story",
+    "text": "Histoire 35 : Un étudiant a simplifié l'onboarding de sa grand-mère; elle a tout fait seule."
+  },
+  {
+    "id": "fr-s-036",
+    "kind": "story",
+    "text": "Histoire 36 : Un écran de chargement honnête a calmé les utilisateurs impatients."
+  },
+  {
+    "id": "fr-s-037",
+    "kind": "story",
+    "text": "Histoire 37 : Le bouton annuler upload a évité bien des sueurs froides."
+  },
+  {
+    "id": "fr-s-038",
+    "kind": "story",
+    "text": "Histoire 38 : Une vibration de succès a rassuré toute l'équipe terrain."
+  },
+  {
+    "id": "fr-s-039",
+    "kind": "story",
+    "text": "Histoire 39 : La police plus grande a fait sourire une classe entière."
+  },
+  {
+    "id": "fr-s-040",
+    "kind": "story",
+    "text": "Histoire 40 : Un mode nuit a sauvé les yeux d'un soigneur de nuit."
+  },
+  {
+    "id": "fr-s-041",
+    "kind": "story",
+    "text": "Histoire 41 : Elle a mis les sous-titres par défaut et le bureau est devenu plus calme."
+  },
+  {
+    "id": "fr-s-042",
+    "kind": "story",
+    "text": "Histoire 42 : Un collègue a testé au soleil; les contrastes ont été corrigés le jour même."
+  },
+  {
+    "id": "fr-s-043",
+    "kind": "story",
+    "text": "Histoire 43 : Un chauffeur de bus a appris bonjour en LSF, les matinées se sont éclaircies."
+  },
+  {
+    "id": "fr-s-044",
+    "kind": "story",
+    "text": "Histoire 44 : Ils ont décalé le lancement d'un jour pour ajouter un mode hors ligne."
+  },
+  {
+    "id": "fr-s-045",
+    "kind": "story",
+    "text": "Histoire 45 : Un étudiant a simplifié l'onboarding de sa grand-mère; elle a tout fait seule."
+  },
+  {
+    "id": "fr-s-046",
+    "kind": "story",
+    "text": "Histoire 46 : Un écran de chargement honnête a calmé les utilisateurs impatients."
+  },
+  {
+    "id": "fr-s-047",
+    "kind": "story",
+    "text": "Histoire 47 : Le bouton annuler upload a évité bien des sueurs froides."
+  },
+  {
+    "id": "fr-s-048",
+    "kind": "story",
+    "text": "Histoire 48 : Une vibration de succès a rassuré toute l'équipe terrain."
+  },
+  {
+    "id": "fr-s-049",
+    "kind": "story",
+    "text": "Histoire 49 : La police plus grande a fait sourire une classe entière."
+  },
+  {
+    "id": "fr-s-050",
+    "kind": "story",
+    "text": "Histoire 50 : Un mode nuit a sauvé les yeux d'un soigneur de nuit."
+  },
+  {
+    "id": "fr-s-051",
+    "kind": "story",
+    "text": "Histoire 51 : Elle a mis les sous-titres par défaut et le bureau est devenu plus calme."
+  },
+  {
+    "id": "fr-s-052",
+    "kind": "story",
+    "text": "Histoire 52 : Un collègue a testé au soleil; les contrastes ont été corrigés le jour même."
+  },
+  {
+    "id": "fr-s-053",
+    "kind": "story",
+    "text": "Histoire 53 : Un chauffeur de bus a appris bonjour en LSF, les matinées se sont éclaircies."
+  },
+  {
+    "id": "fr-s-054",
+    "kind": "story",
+    "text": "Histoire 54 : Ils ont décalé le lancement d'un jour pour ajouter un mode hors ligne."
+  },
+  {
+    "id": "fr-s-055",
+    "kind": "story",
+    "text": "Histoire 55 : Un étudiant a simplifié l'onboarding de sa grand-mère; elle a tout fait seule."
+  },
+  {
+    "id": "fr-s-056",
+    "kind": "story",
+    "text": "Histoire 56 : Un écran de chargement honnête a calmé les utilisateurs impatients."
+  },
+  {
+    "id": "fr-s-057",
+    "kind": "story",
+    "text": "Histoire 57 : Le bouton annuler upload a évité bien des sueurs froides."
+  },
+  {
+    "id": "fr-s-058",
+    "kind": "story",
+    "text": "Histoire 58 : Une vibration de succès a rassuré toute l'équipe terrain."
+  },
+  {
+    "id": "fr-s-059",
+    "kind": "story",
+    "text": "Histoire 59 : La police plus grande a fait sourire une classe entière."
+  },
+  {
+    "id": "fr-s-060",
+    "kind": "story",
+    "text": "Histoire 60 : Un mode nuit a sauvé les yeux d'un soigneur de nuit."
+  },
+  {
+    "id": "fr-s-061",
+    "kind": "story",
+    "text": "Histoire 61 : Elle a mis les sous-titres par défaut et le bureau est devenu plus calme."
+  },
+  {
+    "id": "fr-s-062",
+    "kind": "story",
+    "text": "Histoire 62 : Un collègue a testé au soleil; les contrastes ont été corrigés le jour même."
+  },
+  {
+    "id": "fr-s-063",
+    "kind": "story",
+    "text": "Histoire 63 : Un chauffeur de bus a appris bonjour en LSF, les matinées se sont éclaircies."
+  },
+  {
+    "id": "fr-s-064",
+    "kind": "story",
+    "text": "Histoire 64 : Ils ont décalé le lancement d'un jour pour ajouter un mode hors ligne."
+  },
+  {
+    "id": "fr-s-065",
+    "kind": "story",
+    "text": "Histoire 65 : Un étudiant a simplifié l'onboarding de sa grand-mère; elle a tout fait seule."
+  },
+  {
+    "id": "fr-s-066",
+    "kind": "story",
+    "text": "Histoire 66 : Un écran de chargement honnête a calmé les utilisateurs impatients."
+  },
+  {
+    "id": "fr-s-067",
+    "kind": "story",
+    "text": "Histoire 67 : Le bouton annuler upload a évité bien des sueurs froides."
+  },
+  {
+    "id": "fr-s-068",
+    "kind": "story",
+    "text": "Histoire 68 : Une vibration de succès a rassuré toute l'équipe terrain."
+  },
+  {
+    "id": "fr-s-069",
+    "kind": "story",
+    "text": "Histoire 69 : La police plus grande a fait sourire une classe entière."
+  },
+  {
+    "id": "fr-s-070",
+    "kind": "story",
+    "text": "Histoire 70 : Un mode nuit a sauvé les yeux d'un soigneur de nuit."
+  },
+  {
+    "id": "fr-s-071",
+    "kind": "story",
+    "text": "Histoire 71 : Elle a mis les sous-titres par défaut et le bureau est devenu plus calme."
+  },
+  {
+    "id": "fr-s-072",
+    "kind": "story",
+    "text": "Histoire 72 : Un collègue a testé au soleil; les contrastes ont été corrigés le jour même."
+  },
+  {
+    "id": "fr-s-073",
+    "kind": "story",
+    "text": "Histoire 73 : Un chauffeur de bus a appris bonjour en LSF, les matinées se sont éclaircies."
+  },
+  {
+    "id": "fr-s-074",
+    "kind": "story",
+    "text": "Histoire 74 : Ils ont décalé le lancement d'un jour pour ajouter un mode hors ligne."
+  },
+  {
+    "id": "fr-s-075",
+    "kind": "story",
+    "text": "Histoire 75 : Un étudiant a simplifié l'onboarding de sa grand-mère; elle a tout fait seule."
+  },
+  {
+    "id": "fr-s-076",
+    "kind": "story",
+    "text": "Histoire 76 : Un écran de chargement honnête a calmé les utilisateurs impatients."
+  },
+  {
+    "id": "fr-s-077",
+    "kind": "story",
+    "text": "Histoire 77 : Le bouton annuler upload a évité bien des sueurs froides."
+  },
+  {
+    "id": "fr-s-078",
+    "kind": "story",
+    "text": "Histoire 78 : Une vibration de succès a rassuré toute l'équipe terrain."
+  },
+  {
+    "id": "fr-s-079",
+    "kind": "story",
+    "text": "Histoire 79 : La police plus grande a fait sourire une classe entière."
+  },
+  {
+    "id": "fr-s-080",
+    "kind": "story",
+    "text": "Histoire 80 : Un mode nuit a sauvé les yeux d'un soigneur de nuit."
+  },
+  {
+    "id": "fr-s-081",
+    "kind": "story",
+    "text": "Histoire 81 : Elle a mis les sous-titres par défaut et le bureau est devenu plus calme."
+  },
+  {
+    "id": "fr-s-082",
+    "kind": "story",
+    "text": "Histoire 82 : Un collègue a testé au soleil; les contrastes ont été corrigés le jour même."
+  },
+  {
+    "id": "fr-s-083",
+    "kind": "story",
+    "text": "Histoire 83 : Un chauffeur de bus a appris bonjour en LSF, les matinées se sont éclaircies."
+  },
+  {
+    "id": "fr-s-084",
+    "kind": "story",
+    "text": "Histoire 84 : Ils ont décalé le lancement d'un jour pour ajouter un mode hors ligne."
+  },
+  {
+    "id": "fr-s-085",
+    "kind": "story",
+    "text": "Histoire 85 : Un étudiant a simplifié l'onboarding de sa grand-mère; elle a tout fait seule."
+  },
+  {
+    "id": "fr-s-086",
+    "kind": "story",
+    "text": "Histoire 86 : Un écran de chargement honnête a calmé les utilisateurs impatients."
+  },
+  {
+    "id": "fr-s-087",
+    "kind": "story",
+    "text": "Histoire 87 : Le bouton annuler upload a évité bien des sueurs froides."
+  },
+  {
+    "id": "fr-s-088",
+    "kind": "story",
+    "text": "Histoire 88 : Une vibration de succès a rassuré toute l'équipe terrain."
+  },
+  {
+    "id": "fr-s-089",
+    "kind": "story",
+    "text": "Histoire 89 : La police plus grande a fait sourire une classe entière."
+  },
+  {
+    "id": "fr-s-090",
+    "kind": "story",
+    "text": "Histoire 90 : Un mode nuit a sauvé les yeux d'un soigneur de nuit."
+  },
+  {
+    "id": "fr-s-091",
+    "kind": "story",
+    "text": "Histoire 91 : Elle a mis les sous-titres par défaut et le bureau est devenu plus calme."
+  },
+  {
+    "id": "fr-s-092",
+    "kind": "story",
+    "text": "Histoire 92 : Un collègue a testé au soleil; les contrastes ont été corrigés le jour même."
+  },
+  {
+    "id": "fr-s-093",
+    "kind": "story",
+    "text": "Histoire 93 : Un chauffeur de bus a appris bonjour en LSF, les matinées se sont éclaircies."
+  },
+  {
+    "id": "fr-s-094",
+    "kind": "story",
+    "text": "Histoire 94 : Ils ont décalé le lancement d'un jour pour ajouter un mode hors ligne."
+  },
+  {
+    "id": "fr-s-095",
+    "kind": "story",
+    "text": "Histoire 95 : Un étudiant a simplifié l'onboarding de sa grand-mère; elle a tout fait seule."
+  },
+  {
+    "id": "fr-s-096",
+    "kind": "story",
+    "text": "Histoire 96 : Un écran de chargement honnête a calmé les utilisateurs impatients."
+  },
+  {
+    "id": "fr-s-097",
+    "kind": "story",
+    "text": "Histoire 97 : Le bouton annuler upload a évité bien des sueurs froides."
+  },
+  {
+    "id": "fr-s-098",
+    "kind": "story",
+    "text": "Histoire 98 : Une vibration de succès a rassuré toute l'équipe terrain."
+  },
+  {
+    "id": "fr-s-099",
+    "kind": "story",
+    "text": "Histoire 99 : La police plus grande a fait sourire une classe entière."
+  },
+  {
+    "id": "fr-s-100",
+    "kind": "story",
+    "text": "Histoire 100 : Un mode nuit a sauvé les yeux d'un soigneur de nuit."
+  },
+  {
+    "id": "fr-f-001",
+    "kind": "fact",
+    "text": "Fait 1 : Le miel bien conservé peut durer des siècles."
+  },
+  {
+    "id": "fr-f-002",
+    "kind": "fact",
+    "text": "Fait 2 : Les pieuvres ont trois coeurs."
+  },
+  {
+    "id": "fr-f-003",
+    "kind": "fact",
+    "text": "Fait 3 : Les bananes sont des baies au sens botanique."
+  },
+  {
+    "id": "fr-f-004",
+    "kind": "fact",
+    "text": "Fait 4 : La lumière du soleil met environ huit minutes pour atteindre la Terre."
+  },
+  {
+    "id": "fr-f-005",
+    "kind": "fact",
+    "text": "Fait 5 : Les requins existaient avant les arbres."
+  },
+  {
+    "id": "fr-f-006",
+    "kind": "fact",
+    "text": "Fait 6 : La tour Eiffel grandit légèrement en été."
+  },
+  {
+    "id": "fr-f-007",
+    "kind": "fact",
+    "text": "Fait 7 : L'Antarctique est le plus grand désert du monde."
+  },
+  {
+    "id": "fr-f-008",
+    "kind": "fact",
+    "text": "Fait 8 : Les dauphins ont des noms uniques pour se reconnaître."
+  },
+  {
+    "id": "fr-f-009",
+    "kind": "fact",
+    "text": "Fait 9 : Un éclair est plus chaud que la surface du soleil."
+  },
+  {
+    "id": "fr-f-010",
+    "kind": "fact",
+    "text": "Fait 10 : Les wombats font des crottes en forme de cube."
+  },
+  {
+    "id": "fr-f-011",
+    "kind": "fact",
+    "text": "Fait 11 : Le miel bien conservé peut durer des siècles."
+  },
+  {
+    "id": "fr-f-012",
+    "kind": "fact",
+    "text": "Fait 12 : Les pieuvres ont trois coeurs."
+  },
+  {
+    "id": "fr-f-013",
+    "kind": "fact",
+    "text": "Fait 13 : Les bananes sont des baies au sens botanique."
+  },
+  {
+    "id": "fr-f-014",
+    "kind": "fact",
+    "text": "Fait 14 : La lumière du soleil met environ huit minutes pour atteindre la Terre."
+  },
+  {
+    "id": "fr-f-015",
+    "kind": "fact",
+    "text": "Fait 15 : Les requins existaient avant les arbres."
+  },
+  {
+    "id": "fr-f-016",
+    "kind": "fact",
+    "text": "Fait 16 : La tour Eiffel grandit légèrement en été."
+  },
+  {
+    "id": "fr-f-017",
+    "kind": "fact",
+    "text": "Fait 17 : L'Antarctique est le plus grand désert du monde."
+  },
+  {
+    "id": "fr-f-018",
+    "kind": "fact",
+    "text": "Fait 18 : Les dauphins ont des noms uniques pour se reconnaître."
+  },
+  {
+    "id": "fr-f-019",
+    "kind": "fact",
+    "text": "Fait 19 : Un éclair est plus chaud que la surface du soleil."
+  },
+  {
+    "id": "fr-f-020",
+    "kind": "fact",
+    "text": "Fait 20 : Les wombats font des crottes en forme de cube."
+  },
+  {
+    "id": "fr-f-021",
+    "kind": "fact",
+    "text": "Fait 21 : Le miel bien conservé peut durer des siècles."
+  },
+  {
+    "id": "fr-f-022",
+    "kind": "fact",
+    "text": "Fait 22 : Les pieuvres ont trois coeurs."
+  },
+  {
+    "id": "fr-f-023",
+    "kind": "fact",
+    "text": "Fait 23 : Les bananes sont des baies au sens botanique."
+  },
+  {
+    "id": "fr-f-024",
+    "kind": "fact",
+    "text": "Fait 24 : La lumière du soleil met environ huit minutes pour atteindre la Terre."
+  },
+  {
+    "id": "fr-f-025",
+    "kind": "fact",
+    "text": "Fait 25 : Les requins existaient avant les arbres."
+  },
+  {
+    "id": "fr-f-026",
+    "kind": "fact",
+    "text": "Fait 26 : La tour Eiffel grandit légèrement en été."
+  },
+  {
+    "id": "fr-f-027",
+    "kind": "fact",
+    "text": "Fait 27 : L'Antarctique est le plus grand désert du monde."
+  },
+  {
+    "id": "fr-f-028",
+    "kind": "fact",
+    "text": "Fait 28 : Les dauphins ont des noms uniques pour se reconnaître."
+  },
+  {
+    "id": "fr-f-029",
+    "kind": "fact",
+    "text": "Fait 29 : Un éclair est plus chaud que la surface du soleil."
+  },
+  {
+    "id": "fr-f-030",
+    "kind": "fact",
+    "text": "Fait 30 : Les wombats font des crottes en forme de cube."
+  },
+  {
+    "id": "fr-f-031",
+    "kind": "fact",
+    "text": "Fait 31 : Le miel bien conservé peut durer des siècles."
+  },
+  {
+    "id": "fr-f-032",
+    "kind": "fact",
+    "text": "Fait 32 : Les pieuvres ont trois coeurs."
+  },
+  {
+    "id": "fr-f-033",
+    "kind": "fact",
+    "text": "Fait 33 : Les bananes sont des baies au sens botanique."
+  },
+  {
+    "id": "fr-f-034",
+    "kind": "fact",
+    "text": "Fait 34 : La lumière du soleil met environ huit minutes pour atteindre la Terre."
+  },
+  {
+    "id": "fr-f-035",
+    "kind": "fact",
+    "text": "Fait 35 : Les requins existaient avant les arbres."
+  },
+  {
+    "id": "fr-f-036",
+    "kind": "fact",
+    "text": "Fait 36 : La tour Eiffel grandit légèrement en été."
+  },
+  {
+    "id": "fr-f-037",
+    "kind": "fact",
+    "text": "Fait 37 : L'Antarctique est le plus grand désert du monde."
+  },
+  {
+    "id": "fr-f-038",
+    "kind": "fact",
+    "text": "Fait 38 : Les dauphins ont des noms uniques pour se reconnaître."
+  },
+  {
+    "id": "fr-f-039",
+    "kind": "fact",
+    "text": "Fait 39 : Un éclair est plus chaud que la surface du soleil."
+  },
+  {
+    "id": "fr-f-040",
+    "kind": "fact",
+    "text": "Fait 40 : Les wombats font des crottes en forme de cube."
+  },
+  {
+    "id": "fr-f-041",
+    "kind": "fact",
+    "text": "Fait 41 : Le miel bien conservé peut durer des siècles."
+  },
+  {
+    "id": "fr-f-042",
+    "kind": "fact",
+    "text": "Fait 42 : Les pieuvres ont trois coeurs."
+  },
+  {
+    "id": "fr-f-043",
+    "kind": "fact",
+    "text": "Fait 43 : Les bananes sont des baies au sens botanique."
+  },
+  {
+    "id": "fr-f-044",
+    "kind": "fact",
+    "text": "Fait 44 : La lumière du soleil met environ huit minutes pour atteindre la Terre."
+  },
+  {
+    "id": "fr-f-045",
+    "kind": "fact",
+    "text": "Fait 45 : Les requins existaient avant les arbres."
+  },
+  {
+    "id": "fr-f-046",
+    "kind": "fact",
+    "text": "Fait 46 : La tour Eiffel grandit légèrement en été."
+  },
+  {
+    "id": "fr-f-047",
+    "kind": "fact",
+    "text": "Fait 47 : L'Antarctique est le plus grand désert du monde."
+  },
+  {
+    "id": "fr-f-048",
+    "kind": "fact",
+    "text": "Fait 48 : Les dauphins ont des noms uniques pour se reconnaître."
+  },
+  {
+    "id": "fr-f-049",
+    "kind": "fact",
+    "text": "Fait 49 : Un éclair est plus chaud que la surface du soleil."
+  },
+  {
+    "id": "fr-f-050",
+    "kind": "fact",
+    "text": "Fait 50 : Les wombats font des crottes en forme de cube."
+  },
+  {
+    "id": "fr-f-051",
+    "kind": "fact",
+    "text": "Fait 51 : Le miel bien conservé peut durer des siècles."
+  },
+  {
+    "id": "fr-f-052",
+    "kind": "fact",
+    "text": "Fait 52 : Les pieuvres ont trois coeurs."
+  },
+  {
+    "id": "fr-f-053",
+    "kind": "fact",
+    "text": "Fait 53 : Les bananes sont des baies au sens botanique."
+  },
+  {
+    "id": "fr-f-054",
+    "kind": "fact",
+    "text": "Fait 54 : La lumière du soleil met environ huit minutes pour atteindre la Terre."
+  },
+  {
+    "id": "fr-f-055",
+    "kind": "fact",
+    "text": "Fait 55 : Les requins existaient avant les arbres."
+  },
+  {
+    "id": "fr-f-056",
+    "kind": "fact",
+    "text": "Fait 56 : La tour Eiffel grandit légèrement en été."
+  },
+  {
+    "id": "fr-f-057",
+    "kind": "fact",
+    "text": "Fait 57 : L'Antarctique est le plus grand désert du monde."
+  },
+  {
+    "id": "fr-f-058",
+    "kind": "fact",
+    "text": "Fait 58 : Les dauphins ont des noms uniques pour se reconnaître."
+  },
+  {
+    "id": "fr-f-059",
+    "kind": "fact",
+    "text": "Fait 59 : Un éclair est plus chaud que la surface du soleil."
+  },
+  {
+    "id": "fr-f-060",
+    "kind": "fact",
+    "text": "Fait 60 : Les wombats font des crottes en forme de cube."
+  },
+  {
+    "id": "fr-f-061",
+    "kind": "fact",
+    "text": "Fait 61 : Le miel bien conservé peut durer des siècles."
+  },
+  {
+    "id": "fr-f-062",
+    "kind": "fact",
+    "text": "Fait 62 : Les pieuvres ont trois coeurs."
+  },
+  {
+    "id": "fr-f-063",
+    "kind": "fact",
+    "text": "Fait 63 : Les bananes sont des baies au sens botanique."
+  },
+  {
+    "id": "fr-f-064",
+    "kind": "fact",
+    "text": "Fait 64 : La lumière du soleil met environ huit minutes pour atteindre la Terre."
+  },
+  {
+    "id": "fr-f-065",
+    "kind": "fact",
+    "text": "Fait 65 : Les requins existaient avant les arbres."
+  },
+  {
+    "id": "fr-f-066",
+    "kind": "fact",
+    "text": "Fait 66 : La tour Eiffel grandit légèrement en été."
+  },
+  {
+    "id": "fr-f-067",
+    "kind": "fact",
+    "text": "Fait 67 : L'Antarctique est le plus grand désert du monde."
+  },
+  {
+    "id": "fr-f-068",
+    "kind": "fact",
+    "text": "Fait 68 : Les dauphins ont des noms uniques pour se reconnaître."
+  },
+  {
+    "id": "fr-f-069",
+    "kind": "fact",
+    "text": "Fait 69 : Un éclair est plus chaud que la surface du soleil."
+  },
+  {
+    "id": "fr-f-070",
+    "kind": "fact",
+    "text": "Fait 70 : Les wombats font des crottes en forme de cube."
+  },
+  {
+    "id": "fr-f-071",
+    "kind": "fact",
+    "text": "Fait 71 : Le miel bien conservé peut durer des siècles."
+  },
+  {
+    "id": "fr-f-072",
+    "kind": "fact",
+    "text": "Fait 72 : Les pieuvres ont trois coeurs."
+  },
+  {
+    "id": "fr-f-073",
+    "kind": "fact",
+    "text": "Fait 73 : Les bananes sont des baies au sens botanique."
+  },
+  {
+    "id": "fr-f-074",
+    "kind": "fact",
+    "text": "Fait 74 : La lumière du soleil met environ huit minutes pour atteindre la Terre."
+  },
+  {
+    "id": "fr-f-075",
+    "kind": "fact",
+    "text": "Fait 75 : Les requins existaient avant les arbres."
+  },
+  {
+    "id": "fr-f-076",
+    "kind": "fact",
+    "text": "Fait 76 : La tour Eiffel grandit légèrement en été."
+  },
+  {
+    "id": "fr-f-077",
+    "kind": "fact",
+    "text": "Fait 77 : L'Antarctique est le plus grand désert du monde."
+  },
+  {
+    "id": "fr-f-078",
+    "kind": "fact",
+    "text": "Fait 78 : Les dauphins ont des noms uniques pour se reconnaître."
+  },
+  {
+    "id": "fr-f-079",
+    "kind": "fact",
+    "text": "Fait 79 : Un éclair est plus chaud que la surface du soleil."
+  },
+  {
+    "id": "fr-f-080",
+    "kind": "fact",
+    "text": "Fait 80 : Les wombats font des crottes en forme de cube."
+  },
+  {
+    "id": "fr-f-081",
+    "kind": "fact",
+    "text": "Fait 81 : Le miel bien conservé peut durer des siècles."
+  },
+  {
+    "id": "fr-f-082",
+    "kind": "fact",
+    "text": "Fait 82 : Les pieuvres ont trois coeurs."
+  },
+  {
+    "id": "fr-f-083",
+    "kind": "fact",
+    "text": "Fait 83 : Les bananes sont des baies au sens botanique."
+  },
+  {
+    "id": "fr-f-084",
+    "kind": "fact",
+    "text": "Fait 84 : La lumière du soleil met environ huit minutes pour atteindre la Terre."
+  },
+  {
+    "id": "fr-f-085",
+    "kind": "fact",
+    "text": "Fait 85 : Les requins existaient avant les arbres."
+  },
+  {
+    "id": "fr-f-086",
+    "kind": "fact",
+    "text": "Fait 86 : La tour Eiffel grandit légèrement en été."
+  },
+  {
+    "id": "fr-f-087",
+    "kind": "fact",
+    "text": "Fait 87 : L'Antarctique est le plus grand désert du monde."
+  },
+  {
+    "id": "fr-f-088",
+    "kind": "fact",
+    "text": "Fait 88 : Les dauphins ont des noms uniques pour se reconnaître."
+  },
+  {
+    "id": "fr-f-089",
+    "kind": "fact",
+    "text": "Fait 89 : Un éclair est plus chaud que la surface du soleil."
+  },
+  {
+    "id": "fr-f-090",
+    "kind": "fact",
+    "text": "Fait 90 : Les wombats font des crottes en forme de cube."
+  },
+  {
+    "id": "fr-f-091",
+    "kind": "fact",
+    "text": "Fait 91 : Le miel bien conservé peut durer des siècles."
+  },
+  {
+    "id": "fr-f-092",
+    "kind": "fact",
+    "text": "Fait 92 : Les pieuvres ont trois coeurs."
+  },
+  {
+    "id": "fr-f-093",
+    "kind": "fact",
+    "text": "Fait 93 : Les bananes sont des baies au sens botanique."
+  },
+  {
+    "id": "fr-f-094",
+    "kind": "fact",
+    "text": "Fait 94 : La lumière du soleil met environ huit minutes pour atteindre la Terre."
+  },
+  {
+    "id": "fr-f-095",
+    "kind": "fact",
+    "text": "Fait 95 : Les requins existaient avant les arbres."
+  },
+  {
+    "id": "fr-f-096",
+    "kind": "fact",
+    "text": "Fait 96 : La tour Eiffel grandit légèrement en été."
+  },
+  {
+    "id": "fr-f-097",
+    "kind": "fact",
+    "text": "Fait 97 : L'Antarctique est le plus grand désert du monde."
+  },
+  {
+    "id": "fr-f-098",
+    "kind": "fact",
+    "text": "Fait 98 : Les dauphins ont des noms uniques pour se reconnaître."
+  },
+  {
+    "id": "fr-f-099",
+    "kind": "fact",
+    "text": "Fait 99 : Un éclair est plus chaud que la surface du soleil."
+  },
+  {
+    "id": "fr-f-100",
+    "kind": "fact",
+    "text": "Fait 100 : Les wombats font des crottes en forme de cube."
+  },
+  {
+    "id": "fr-q-001",
+    "kind": "quote",
+    "text": "Citation 1 : La clarté est une forme de gentillesse."
+  },
+  {
+    "id": "fr-q-002",
+    "kind": "quote",
+    "text": "Citation 2 : L'accessibilité est un interrupteur de confiance."
+  },
+  {
+    "id": "fr-q-003",
+    "kind": "quote",
+    "text": "Citation 3 : Documenter l'intention évite bien des hypothèses."
+  },
+  {
+    "id": "fr-q-004",
+    "kind": "quote",
+    "text": "Citation 4 : De petites livraisons constantes bâtissent la fiabilité."
+  },
+  {
+    "id": "fr-q-005",
+    "kind": "quote",
+    "text": "Citation 5 : Tester avec des personnes différentes révèle des angles cachés."
+  },
+  {
+    "id": "fr-q-006",
+    "kind": "quote",
+    "text": "Citation 6 : Les bons défauts par défaut rassurent en silence."
+  },
+  {
+    "id": "fr-q-007",
+    "kind": "quote",
+    "text": "Citation 7 : La simplicité se mérite; elle ne se devine pas."
+  },
+  {
+    "id": "fr-q-008",
+    "kind": "quote",
+    "text": "Citation 8 : Le meilleur bug est celui que l'on a empêché."
+  },
+  {
+    "id": "fr-q-009",
+    "kind": "quote",
+    "text": "Citation 9 : Les labels sont des rampes d'accès cognitives."
+  },
+  {
+    "id": "fr-q-010",
+    "kind": "quote",
+    "text": "Citation 10 : Le calme est une fonctionnalité."
+  },
+  {
+    "id": "fr-q-011",
+    "kind": "quote",
+    "text": "Citation 11 : La clarté est une forme de gentillesse."
+  },
+  {
+    "id": "fr-q-012",
+    "kind": "quote",
+    "text": "Citation 12 : L'accessibilité est un interrupteur de confiance."
+  },
+  {
+    "id": "fr-q-013",
+    "kind": "quote",
+    "text": "Citation 13 : Documenter l'intention évite bien des hypothèses."
+  },
+  {
+    "id": "fr-q-014",
+    "kind": "quote",
+    "text": "Citation 14 : De petites livraisons constantes bâtissent la fiabilité."
+  },
+  {
+    "id": "fr-q-015",
+    "kind": "quote",
+    "text": "Citation 15 : Tester avec des personnes différentes révèle des angles cachés."
+  },
+  {
+    "id": "fr-q-016",
+    "kind": "quote",
+    "text": "Citation 16 : Les bons défauts par défaut rassurent en silence."
+  },
+  {
+    "id": "fr-q-017",
+    "kind": "quote",
+    "text": "Citation 17 : La simplicité se mérite; elle ne se devine pas."
+  },
+  {
+    "id": "fr-q-018",
+    "kind": "quote",
+    "text": "Citation 18 : Le meilleur bug est celui que l'on a empêché."
+  },
+  {
+    "id": "fr-q-019",
+    "kind": "quote",
+    "text": "Citation 19 : Les labels sont des rampes d'accès cognitives."
+  },
+  {
+    "id": "fr-q-020",
+    "kind": "quote",
+    "text": "Citation 20 : Le calme est une fonctionnalité."
+  },
+  {
+    "id": "fr-q-021",
+    "kind": "quote",
+    "text": "Citation 21 : La clarté est une forme de gentillesse."
+  },
+  {
+    "id": "fr-q-022",
+    "kind": "quote",
+    "text": "Citation 22 : L'accessibilité est un interrupteur de confiance."
+  },
+  {
+    "id": "fr-q-023",
+    "kind": "quote",
+    "text": "Citation 23 : Documenter l'intention évite bien des hypothèses."
+  },
+  {
+    "id": "fr-q-024",
+    "kind": "quote",
+    "text": "Citation 24 : De petites livraisons constantes bâtissent la fiabilité."
+  },
+  {
+    "id": "fr-q-025",
+    "kind": "quote",
+    "text": "Citation 25 : Tester avec des personnes différentes révèle des angles cachés."
+  },
+  {
+    "id": "fr-q-026",
+    "kind": "quote",
+    "text": "Citation 26 : Les bons défauts par défaut rassurent en silence."
+  },
+  {
+    "id": "fr-q-027",
+    "kind": "quote",
+    "text": "Citation 27 : La simplicité se mérite; elle ne se devine pas."
+  },
+  {
+    "id": "fr-q-028",
+    "kind": "quote",
+    "text": "Citation 28 : Le meilleur bug est celui que l'on a empêché."
+  },
+  {
+    "id": "fr-q-029",
+    "kind": "quote",
+    "text": "Citation 29 : Les labels sont des rampes d'accès cognitives."
+  },
+  {
+    "id": "fr-q-030",
+    "kind": "quote",
+    "text": "Citation 30 : Le calme est une fonctionnalité."
+  },
+  {
+    "id": "fr-q-031",
+    "kind": "quote",
+    "text": "Citation 31 : La clarté est une forme de gentillesse."
+  },
+  {
+    "id": "fr-q-032",
+    "kind": "quote",
+    "text": "Citation 32 : L'accessibilité est un interrupteur de confiance."
+  },
+  {
+    "id": "fr-q-033",
+    "kind": "quote",
+    "text": "Citation 33 : Documenter l'intention évite bien des hypothèses."
+  },
+  {
+    "id": "fr-q-034",
+    "kind": "quote",
+    "text": "Citation 34 : De petites livraisons constantes bâtissent la fiabilité."
+  },
+  {
+    "id": "fr-q-035",
+    "kind": "quote",
+    "text": "Citation 35 : Tester avec des personnes différentes révèle des angles cachés."
+  },
+  {
+    "id": "fr-q-036",
+    "kind": "quote",
+    "text": "Citation 36 : Les bons défauts par défaut rassurent en silence."
+  },
+  {
+    "id": "fr-q-037",
+    "kind": "quote",
+    "text": "Citation 37 : La simplicité se mérite; elle ne se devine pas."
+  },
+  {
+    "id": "fr-q-038",
+    "kind": "quote",
+    "text": "Citation 38 : Le meilleur bug est celui que l'on a empêché."
+  },
+  {
+    "id": "fr-q-039",
+    "kind": "quote",
+    "text": "Citation 39 : Les labels sont des rampes d'accès cognitives."
+  },
+  {
+    "id": "fr-q-040",
+    "kind": "quote",
+    "text": "Citation 40 : Le calme est une fonctionnalité."
+  },
+  {
+    "id": "fr-q-041",
+    "kind": "quote",
+    "text": "Citation 41 : La clarté est une forme de gentillesse."
+  },
+  {
+    "id": "fr-q-042",
+    "kind": "quote",
+    "text": "Citation 42 : L'accessibilité est un interrupteur de confiance."
+  },
+  {
+    "id": "fr-q-043",
+    "kind": "quote",
+    "text": "Citation 43 : Documenter l'intention évite bien des hypothèses."
+  },
+  {
+    "id": "fr-q-044",
+    "kind": "quote",
+    "text": "Citation 44 : De petites livraisons constantes bâtissent la fiabilité."
+  },
+  {
+    "id": "fr-q-045",
+    "kind": "quote",
+    "text": "Citation 45 : Tester avec des personnes différentes révèle des angles cachés."
+  },
+  {
+    "id": "fr-q-046",
+    "kind": "quote",
+    "text": "Citation 46 : Les bons défauts par défaut rassurent en silence."
+  },
+  {
+    "id": "fr-q-047",
+    "kind": "quote",
+    "text": "Citation 47 : La simplicité se mérite; elle ne se devine pas."
+  },
+  {
+    "id": "fr-q-048",
+    "kind": "quote",
+    "text": "Citation 48 : Le meilleur bug est celui que l'on a empêché."
+  },
+  {
+    "id": "fr-q-049",
+    "kind": "quote",
+    "text": "Citation 49 : Les labels sont des rampes d'accès cognitives."
+  },
+  {
+    "id": "fr-q-050",
+    "kind": "quote",
+    "text": "Citation 50 : Le calme est une fonctionnalité."
+  },
+  {
+    "id": "fr-q-051",
+    "kind": "quote",
+    "text": "Citation 51 : La clarté est une forme de gentillesse."
+  },
+  {
+    "id": "fr-q-052",
+    "kind": "quote",
+    "text": "Citation 52 : L'accessibilité est un interrupteur de confiance."
+  },
+  {
+    "id": "fr-q-053",
+    "kind": "quote",
+    "text": "Citation 53 : Documenter l'intention évite bien des hypothèses."
+  },
+  {
+    "id": "fr-q-054",
+    "kind": "quote",
+    "text": "Citation 54 : De petites livraisons constantes bâtissent la fiabilité."
+  },
+  {
+    "id": "fr-q-055",
+    "kind": "quote",
+    "text": "Citation 55 : Tester avec des personnes différentes révèle des angles cachés."
+  },
+  {
+    "id": "fr-q-056",
+    "kind": "quote",
+    "text": "Citation 56 : Les bons défauts par défaut rassurent en silence."
+  },
+  {
+    "id": "fr-q-057",
+    "kind": "quote",
+    "text": "Citation 57 : La simplicité se mérite; elle ne se devine pas."
+  },
+  {
+    "id": "fr-q-058",
+    "kind": "quote",
+    "text": "Citation 58 : Le meilleur bug est celui que l'on a empêché."
+  },
+  {
+    "id": "fr-q-059",
+    "kind": "quote",
+    "text": "Citation 59 : Les labels sont des rampes d'accès cognitives."
+  },
+  {
+    "id": "fr-q-060",
+    "kind": "quote",
+    "text": "Citation 60 : Le calme est une fonctionnalité."
+  },
+  {
+    "id": "fr-q-061",
+    "kind": "quote",
+    "text": "Citation 61 : La clarté est une forme de gentillesse."
+  },
+  {
+    "id": "fr-q-062",
+    "kind": "quote",
+    "text": "Citation 62 : L'accessibilité est un interrupteur de confiance."
+  },
+  {
+    "id": "fr-q-063",
+    "kind": "quote",
+    "text": "Citation 63 : Documenter l'intention évite bien des hypothèses."
+  },
+  {
+    "id": "fr-q-064",
+    "kind": "quote",
+    "text": "Citation 64 : De petites livraisons constantes bâtissent la fiabilité."
+  },
+  {
+    "id": "fr-q-065",
+    "kind": "quote",
+    "text": "Citation 65 : Tester avec des personnes différentes révèle des angles cachés."
+  },
+  {
+    "id": "fr-q-066",
+    "kind": "quote",
+    "text": "Citation 66 : Les bons défauts par défaut rassurent en silence."
+  },
+  {
+    "id": "fr-q-067",
+    "kind": "quote",
+    "text": "Citation 67 : La simplicité se mérite; elle ne se devine pas."
+  },
+  {
+    "id": "fr-q-068",
+    "kind": "quote",
+    "text": "Citation 68 : Le meilleur bug est celui que l'on a empêché."
+  },
+  {
+    "id": "fr-q-069",
+    "kind": "quote",
+    "text": "Citation 69 : Les labels sont des rampes d'accès cognitives."
+  },
+  {
+    "id": "fr-q-070",
+    "kind": "quote",
+    "text": "Citation 70 : Le calme est une fonctionnalité."
+  },
+  {
+    "id": "fr-q-071",
+    "kind": "quote",
+    "text": "Citation 71 : La clarté est une forme de gentillesse."
+  },
+  {
+    "id": "fr-q-072",
+    "kind": "quote",
+    "text": "Citation 72 : L'accessibilité est un interrupteur de confiance."
+  },
+  {
+    "id": "fr-q-073",
+    "kind": "quote",
+    "text": "Citation 73 : Documenter l'intention évite bien des hypothèses."
+  },
+  {
+    "id": "fr-q-074",
+    "kind": "quote",
+    "text": "Citation 74 : De petites livraisons constantes bâtissent la fiabilité."
+  },
+  {
+    "id": "fr-q-075",
+    "kind": "quote",
+    "text": "Citation 75 : Tester avec des personnes différentes révèle des angles cachés."
+  },
+  {
+    "id": "fr-q-076",
+    "kind": "quote",
+    "text": "Citation 76 : Les bons défauts par défaut rassurent en silence."
+  },
+  {
+    "id": "fr-q-077",
+    "kind": "quote",
+    "text": "Citation 77 : La simplicité se mérite; elle ne se devine pas."
+  },
+  {
+    "id": "fr-q-078",
+    "kind": "quote",
+    "text": "Citation 78 : Le meilleur bug est celui que l'on a empêché."
+  },
+  {
+    "id": "fr-q-079",
+    "kind": "quote",
+    "text": "Citation 79 : Les labels sont des rampes d'accès cognitives."
+  },
+  {
+    "id": "fr-q-080",
+    "kind": "quote",
+    "text": "Citation 80 : Le calme est une fonctionnalité."
+  },
+  {
+    "id": "fr-q-081",
+    "kind": "quote",
+    "text": "Citation 81 : La clarté est une forme de gentillesse."
+  },
+  {
+    "id": "fr-q-082",
+    "kind": "quote",
+    "text": "Citation 82 : L'accessibilité est un interrupteur de confiance."
+  },
+  {
+    "id": "fr-q-083",
+    "kind": "quote",
+    "text": "Citation 83 : Documenter l'intention évite bien des hypothèses."
+  },
+  {
+    "id": "fr-q-084",
+    "kind": "quote",
+    "text": "Citation 84 : De petites livraisons constantes bâtissent la fiabilité."
+  },
+  {
+    "id": "fr-q-085",
+    "kind": "quote",
+    "text": "Citation 85 : Tester avec des personnes différentes révèle des angles cachés."
+  },
+  {
+    "id": "fr-q-086",
+    "kind": "quote",
+    "text": "Citation 86 : Les bons défauts par défaut rassurent en silence."
+  },
+  {
+    "id": "fr-q-087",
+    "kind": "quote",
+    "text": "Citation 87 : La simplicité se mérite; elle ne se devine pas."
+  },
+  {
+    "id": "fr-q-088",
+    "kind": "quote",
+    "text": "Citation 88 : Le meilleur bug est celui que l'on a empêché."
+  },
+  {
+    "id": "fr-q-089",
+    "kind": "quote",
+    "text": "Citation 89 : Les labels sont des rampes d'accès cognitives."
+  },
+  {
+    "id": "fr-q-090",
+    "kind": "quote",
+    "text": "Citation 90 : Le calme est une fonctionnalité."
+  },
+  {
+    "id": "fr-q-091",
+    "kind": "quote",
+    "text": "Citation 91 : La clarté est une forme de gentillesse."
+  },
+  {
+    "id": "fr-q-092",
+    "kind": "quote",
+    "text": "Citation 92 : L'accessibilité est un interrupteur de confiance."
+  },
+  {
+    "id": "fr-q-093",
+    "kind": "quote",
+    "text": "Citation 93 : Documenter l'intention évite bien des hypothèses."
+  },
+  {
+    "id": "fr-q-094",
+    "kind": "quote",
+    "text": "Citation 94 : De petites livraisons constantes bâtissent la fiabilité."
+  },
+  {
+    "id": "fr-q-095",
+    "kind": "quote",
+    "text": "Citation 95 : Tester avec des personnes différentes révèle des angles cachés."
+  },
+  {
+    "id": "fr-q-096",
+    "kind": "quote",
+    "text": "Citation 96 : Les bons défauts par défaut rassurent en silence."
+  },
+  {
+    "id": "fr-q-097",
+    "kind": "quote",
+    "text": "Citation 97 : La simplicité se mérite; elle ne se devine pas."
+  },
+  {
+    "id": "fr-q-098",
+    "kind": "quote",
+    "text": "Citation 98 : Le meilleur bug est celui que l'on a empêché."
+  },
+  {
+    "id": "fr-q-099",
+    "kind": "quote",
+    "text": "Citation 99 : Les labels sont des rampes d'accès cognitives."
+  },
+  {
+    "id": "fr-q-100",
+    "kind": "quote",
+    "text": "Citation 100 : Le calme est une fonctionnalité."
+  },
+  {
+    "id": "fr-r-001",
+    "kind": "riddle",
+    "text": "Énigme 1 : Qu'est-ce qui devient plus humide en séchant ? Réponse : Une serviette."
+  },
+  {
+    "id": "fr-r-002",
+    "kind": "riddle",
+    "text": "Énigme 2 : Qu'a des clés mais pas de serrures ? Réponse : Un clavier."
+  },
+  {
+    "id": "fr-r-003",
+    "kind": "riddle",
+    "text": "Énigme 3 : Qu'a une tête et une queue mais pas de corps ? Réponse : Une pièce."
+  },
+  {
+    "id": "fr-r-004",
+    "kind": "riddle",
+    "text": "Énigme 4 : Qu'est-ce qui voyage autour du monde en restant dans un coin ? Réponse : Un timbre."
+  },
+  {
+    "id": "fr-r-005",
+    "kind": "riddle",
+    "text": "Énigme 5 : Qu'a des mains mais ne peut applaudir ? Réponse : Une horloge."
+  },
+  {
+    "id": "fr-r-006",
+    "kind": "riddle",
+    "text": "Énigme 6 : Qu'a un cou mais pas de tête ? Réponse : Une bouteille."
+  },
+  {
+    "id": "fr-r-007",
+    "kind": "riddle",
+    "text": "Énigme 7 : Qu'est-ce qui court mais ne marche jamais ? Réponse : Une rivière."
+  },
+  {
+    "id": "fr-r-008",
+    "kind": "riddle",
+    "text": "Énigme 8 : Qu'a beaucoup de dents mais ne mord pas ? Réponse : Un peigne."
+  },
+  {
+    "id": "fr-r-009",
+    "kind": "riddle",
+    "text": "Énigme 9 : Qu'est-ce qui peut être cassé, fait, raconté et joué ? Réponse : Une blague."
+  },
+  {
+    "id": "fr-r-010",
+    "kind": "riddle",
+    "text": "Énigme 10 : Qu'a un oeil mais ne voit pas ? Réponse : Une aiguille."
+  },
+  {
+    "id": "fr-r-011",
+    "kind": "riddle",
+    "text": "Énigme 11 : Qu'est-ce qui devient plus humide en séchant ? Réponse : Une serviette."
+  },
+  {
+    "id": "fr-r-012",
+    "kind": "riddle",
+    "text": "Énigme 12 : Qu'a des clés mais pas de serrures ? Réponse : Un clavier."
+  },
+  {
+    "id": "fr-r-013",
+    "kind": "riddle",
+    "text": "Énigme 13 : Qu'a une tête et une queue mais pas de corps ? Réponse : Une pièce."
+  },
+  {
+    "id": "fr-r-014",
+    "kind": "riddle",
+    "text": "Énigme 14 : Qu'est-ce qui voyage autour du monde en restant dans un coin ? Réponse : Un timbre."
+  },
+  {
+    "id": "fr-r-015",
+    "kind": "riddle",
+    "text": "Énigme 15 : Qu'a des mains mais ne peut applaudir ? Réponse : Une horloge."
+  },
+  {
+    "id": "fr-r-016",
+    "kind": "riddle",
+    "text": "Énigme 16 : Qu'a un cou mais pas de tête ? Réponse : Une bouteille."
+  },
+  {
+    "id": "fr-r-017",
+    "kind": "riddle",
+    "text": "Énigme 17 : Qu'est-ce qui court mais ne marche jamais ? Réponse : Une rivière."
+  },
+  {
+    "id": "fr-r-018",
+    "kind": "riddle",
+    "text": "Énigme 18 : Qu'a beaucoup de dents mais ne mord pas ? Réponse : Un peigne."
+  },
+  {
+    "id": "fr-r-019",
+    "kind": "riddle",
+    "text": "Énigme 19 : Qu'est-ce qui peut être cassé, fait, raconté et joué ? Réponse : Une blague."
+  },
+  {
+    "id": "fr-r-020",
+    "kind": "riddle",
+    "text": "Énigme 20 : Qu'a un oeil mais ne voit pas ? Réponse : Une aiguille."
+  },
+  {
+    "id": "fr-r-021",
+    "kind": "riddle",
+    "text": "Énigme 21 : Qu'est-ce qui devient plus humide en séchant ? Réponse : Une serviette."
+  },
+  {
+    "id": "fr-r-022",
+    "kind": "riddle",
+    "text": "Énigme 22 : Qu'a des clés mais pas de serrures ? Réponse : Un clavier."
+  },
+  {
+    "id": "fr-r-023",
+    "kind": "riddle",
+    "text": "Énigme 23 : Qu'a une tête et une queue mais pas de corps ? Réponse : Une pièce."
+  },
+  {
+    "id": "fr-r-024",
+    "kind": "riddle",
+    "text": "Énigme 24 : Qu'est-ce qui voyage autour du monde en restant dans un coin ? Réponse : Un timbre."
+  },
+  {
+    "id": "fr-r-025",
+    "kind": "riddle",
+    "text": "Énigme 25 : Qu'a des mains mais ne peut applaudir ? Réponse : Une horloge."
+  },
+  {
+    "id": "fr-r-026",
+    "kind": "riddle",
+    "text": "Énigme 26 : Qu'a un cou mais pas de tête ? Réponse : Une bouteille."
+  },
+  {
+    "id": "fr-r-027",
+    "kind": "riddle",
+    "text": "Énigme 27 : Qu'est-ce qui court mais ne marche jamais ? Réponse : Une rivière."
+  },
+  {
+    "id": "fr-r-028",
+    "kind": "riddle",
+    "text": "Énigme 28 : Qu'a beaucoup de dents mais ne mord pas ? Réponse : Un peigne."
+  },
+  {
+    "id": "fr-r-029",
+    "kind": "riddle",
+    "text": "Énigme 29 : Qu'est-ce qui peut être cassé, fait, raconté et joué ? Réponse : Une blague."
+  },
+  {
+    "id": "fr-r-030",
+    "kind": "riddle",
+    "text": "Énigme 30 : Qu'a un oeil mais ne voit pas ? Réponse : Une aiguille."
+  },
+  {
+    "id": "fr-r-031",
+    "kind": "riddle",
+    "text": "Énigme 31 : Qu'est-ce qui devient plus humide en séchant ? Réponse : Une serviette."
+  },
+  {
+    "id": "fr-r-032",
+    "kind": "riddle",
+    "text": "Énigme 32 : Qu'a des clés mais pas de serrures ? Réponse : Un clavier."
+  },
+  {
+    "id": "fr-r-033",
+    "kind": "riddle",
+    "text": "Énigme 33 : Qu'a une tête et une queue mais pas de corps ? Réponse : Une pièce."
+  },
+  {
+    "id": "fr-r-034",
+    "kind": "riddle",
+    "text": "Énigme 34 : Qu'est-ce qui voyage autour du monde en restant dans un coin ? Réponse : Un timbre."
+  },
+  {
+    "id": "fr-r-035",
+    "kind": "riddle",
+    "text": "Énigme 35 : Qu'a des mains mais ne peut applaudir ? Réponse : Une horloge."
+  },
+  {
+    "id": "fr-r-036",
+    "kind": "riddle",
+    "text": "Énigme 36 : Qu'a un cou mais pas de tête ? Réponse : Une bouteille."
+  },
+  {
+    "id": "fr-r-037",
+    "kind": "riddle",
+    "text": "Énigme 37 : Qu'est-ce qui court mais ne marche jamais ? Réponse : Une rivière."
+  },
+  {
+    "id": "fr-r-038",
+    "kind": "riddle",
+    "text": "Énigme 38 : Qu'a beaucoup de dents mais ne mord pas ? Réponse : Un peigne."
+  },
+  {
+    "id": "fr-r-039",
+    "kind": "riddle",
+    "text": "Énigme 39 : Qu'est-ce qui peut être cassé, fait, raconté et joué ? Réponse : Une blague."
+  },
+  {
+    "id": "fr-r-040",
+    "kind": "riddle",
+    "text": "Énigme 40 : Qu'a un oeil mais ne voit pas ? Réponse : Une aiguille."
+  },
+  {
+    "id": "fr-r-041",
+    "kind": "riddle",
+    "text": "Énigme 41 : Qu'est-ce qui devient plus humide en séchant ? Réponse : Une serviette."
+  },
+  {
+    "id": "fr-r-042",
+    "kind": "riddle",
+    "text": "Énigme 42 : Qu'a des clés mais pas de serrures ? Réponse : Un clavier."
+  },
+  {
+    "id": "fr-r-043",
+    "kind": "riddle",
+    "text": "Énigme 43 : Qu'a une tête et une queue mais pas de corps ? Réponse : Une pièce."
+  },
+  {
+    "id": "fr-r-044",
+    "kind": "riddle",
+    "text": "Énigme 44 : Qu'est-ce qui voyage autour du monde en restant dans un coin ? Réponse : Un timbre."
+  },
+  {
+    "id": "fr-r-045",
+    "kind": "riddle",
+    "text": "Énigme 45 : Qu'a des mains mais ne peut applaudir ? Réponse : Une horloge."
+  },
+  {
+    "id": "fr-r-046",
+    "kind": "riddle",
+    "text": "Énigme 46 : Qu'a un cou mais pas de tête ? Réponse : Une bouteille."
+  },
+  {
+    "id": "fr-r-047",
+    "kind": "riddle",
+    "text": "Énigme 47 : Qu'est-ce qui court mais ne marche jamais ? Réponse : Une rivière."
+  },
+  {
+    "id": "fr-r-048",
+    "kind": "riddle",
+    "text": "Énigme 48 : Qu'a beaucoup de dents mais ne mord pas ? Réponse : Un peigne."
+  },
+  {
+    "id": "fr-r-049",
+    "kind": "riddle",
+    "text": "Énigme 49 : Qu'est-ce qui peut être cassé, fait, raconté et joué ? Réponse : Une blague."
+  },
+  {
+    "id": "fr-r-050",
+    "kind": "riddle",
+    "text": "Énigme 50 : Qu'a un oeil mais ne voit pas ? Réponse : Une aiguille."
+  },
+  {
+    "id": "fr-r-051",
+    "kind": "riddle",
+    "text": "Énigme 51 : Qu'est-ce qui devient plus humide en séchant ? Réponse : Une serviette."
+  },
+  {
+    "id": "fr-r-052",
+    "kind": "riddle",
+    "text": "Énigme 52 : Qu'a des clés mais pas de serrures ? Réponse : Un clavier."
+  },
+  {
+    "id": "fr-r-053",
+    "kind": "riddle",
+    "text": "Énigme 53 : Qu'a une tête et une queue mais pas de corps ? Réponse : Une pièce."
+  },
+  {
+    "id": "fr-r-054",
+    "kind": "riddle",
+    "text": "Énigme 54 : Qu'est-ce qui voyage autour du monde en restant dans un coin ? Réponse : Un timbre."
+  },
+  {
+    "id": "fr-r-055",
+    "kind": "riddle",
+    "text": "Énigme 55 : Qu'a des mains mais ne peut applaudir ? Réponse : Une horloge."
+  },
+  {
+    "id": "fr-r-056",
+    "kind": "riddle",
+    "text": "Énigme 56 : Qu'a un cou mais pas de tête ? Réponse : Une bouteille."
+  },
+  {
+    "id": "fr-r-057",
+    "kind": "riddle",
+    "text": "Énigme 57 : Qu'est-ce qui court mais ne marche jamais ? Réponse : Une rivière."
+  },
+  {
+    "id": "fr-r-058",
+    "kind": "riddle",
+    "text": "Énigme 58 : Qu'a beaucoup de dents mais ne mord pas ? Réponse : Un peigne."
+  },
+  {
+    "id": "fr-r-059",
+    "kind": "riddle",
+    "text": "Énigme 59 : Qu'est-ce qui peut être cassé, fait, raconté et joué ? Réponse : Une blague."
+  },
+  {
+    "id": "fr-r-060",
+    "kind": "riddle",
+    "text": "Énigme 60 : Qu'a un oeil mais ne voit pas ? Réponse : Une aiguille."
+  },
+  {
+    "id": "fr-r-061",
+    "kind": "riddle",
+    "text": "Énigme 61 : Qu'est-ce qui devient plus humide en séchant ? Réponse : Une serviette."
+  },
+  {
+    "id": "fr-r-062",
+    "kind": "riddle",
+    "text": "Énigme 62 : Qu'a des clés mais pas de serrures ? Réponse : Un clavier."
+  },
+  {
+    "id": "fr-r-063",
+    "kind": "riddle",
+    "text": "Énigme 63 : Qu'a une tête et une queue mais pas de corps ? Réponse : Une pièce."
+  },
+  {
+    "id": "fr-r-064",
+    "kind": "riddle",
+    "text": "Énigme 64 : Qu'est-ce qui voyage autour du monde en restant dans un coin ? Réponse : Un timbre."
+  },
+  {
+    "id": "fr-r-065",
+    "kind": "riddle",
+    "text": "Énigme 65 : Qu'a des mains mais ne peut applaudir ? Réponse : Une horloge."
+  },
+  {
+    "id": "fr-r-066",
+    "kind": "riddle",
+    "text": "Énigme 66 : Qu'a un cou mais pas de tête ? Réponse : Une bouteille."
+  },
+  {
+    "id": "fr-r-067",
+    "kind": "riddle",
+    "text": "Énigme 67 : Qu'est-ce qui court mais ne marche jamais ? Réponse : Une rivière."
+  },
+  {
+    "id": "fr-r-068",
+    "kind": "riddle",
+    "text": "Énigme 68 : Qu'a beaucoup de dents mais ne mord pas ? Réponse : Un peigne."
+  },
+  {
+    "id": "fr-r-069",
+    "kind": "riddle",
+    "text": "Énigme 69 : Qu'est-ce qui peut être cassé, fait, raconté et joué ? Réponse : Une blague."
+  },
+  {
+    "id": "fr-r-070",
+    "kind": "riddle",
+    "text": "Énigme 70 : Qu'a un oeil mais ne voit pas ? Réponse : Une aiguille."
+  },
+  {
+    "id": "fr-r-071",
+    "kind": "riddle",
+    "text": "Énigme 71 : Qu'est-ce qui devient plus humide en séchant ? Réponse : Une serviette."
+  },
+  {
+    "id": "fr-r-072",
+    "kind": "riddle",
+    "text": "Énigme 72 : Qu'a des clés mais pas de serrures ? Réponse : Un clavier."
+  },
+  {
+    "id": "fr-r-073",
+    "kind": "riddle",
+    "text": "Énigme 73 : Qu'a une tête et une queue mais pas de corps ? Réponse : Une pièce."
+  },
+  {
+    "id": "fr-r-074",
+    "kind": "riddle",
+    "text": "Énigme 74 : Qu'est-ce qui voyage autour du monde en restant dans un coin ? Réponse : Un timbre."
+  },
+  {
+    "id": "fr-r-075",
+    "kind": "riddle",
+    "text": "Énigme 75 : Qu'a des mains mais ne peut applaudir ? Réponse : Une horloge."
+  },
+  {
+    "id": "fr-r-076",
+    "kind": "riddle",
+    "text": "Énigme 76 : Qu'a un cou mais pas de tête ? Réponse : Une bouteille."
+  },
+  {
+    "id": "fr-r-077",
+    "kind": "riddle",
+    "text": "Énigme 77 : Qu'est-ce qui court mais ne marche jamais ? Réponse : Une rivière."
+  },
+  {
+    "id": "fr-r-078",
+    "kind": "riddle",
+    "text": "Énigme 78 : Qu'a beaucoup de dents mais ne mord pas ? Réponse : Un peigne."
+  },
+  {
+    "id": "fr-r-079",
+    "kind": "riddle",
+    "text": "Énigme 79 : Qu'est-ce qui peut être cassé, fait, raconté et joué ? Réponse : Une blague."
+  },
+  {
+    "id": "fr-r-080",
+    "kind": "riddle",
+    "text": "Énigme 80 : Qu'a un oeil mais ne voit pas ? Réponse : Une aiguille."
+  },
+  {
+    "id": "fr-r-081",
+    "kind": "riddle",
+    "text": "Énigme 81 : Qu'est-ce qui devient plus humide en séchant ? Réponse : Une serviette."
+  },
+  {
+    "id": "fr-r-082",
+    "kind": "riddle",
+    "text": "Énigme 82 : Qu'a des clés mais pas de serrures ? Réponse : Un clavier."
+  },
+  {
+    "id": "fr-r-083",
+    "kind": "riddle",
+    "text": "Énigme 83 : Qu'a une tête et une queue mais pas de corps ? Réponse : Une pièce."
+  },
+  {
+    "id": "fr-r-084",
+    "kind": "riddle",
+    "text": "Énigme 84 : Qu'est-ce qui voyage autour du monde en restant dans un coin ? Réponse : Un timbre."
+  },
+  {
+    "id": "fr-r-085",
+    "kind": "riddle",
+    "text": "Énigme 85 : Qu'a des mains mais ne peut applaudir ? Réponse : Une horloge."
+  },
+  {
+    "id": "fr-r-086",
+    "kind": "riddle",
+    "text": "Énigme 86 : Qu'a un cou mais pas de tête ? Réponse : Une bouteille."
+  },
+  {
+    "id": "fr-r-087",
+    "kind": "riddle",
+    "text": "Énigme 87 : Qu'est-ce qui court mais ne marche jamais ? Réponse : Une rivière."
+  },
+  {
+    "id": "fr-r-088",
+    "kind": "riddle",
+    "text": "Énigme 88 : Qu'a beaucoup de dents mais ne mord pas ? Réponse : Un peigne."
+  },
+  {
+    "id": "fr-r-089",
+    "kind": "riddle",
+    "text": "Énigme 89 : Qu'est-ce qui peut être cassé, fait, raconté et joué ? Réponse : Une blague."
+  },
+  {
+    "id": "fr-r-090",
+    "kind": "riddle",
+    "text": "Énigme 90 : Qu'a un oeil mais ne voit pas ? Réponse : Une aiguille."
+  },
+  {
+    "id": "fr-r-091",
+    "kind": "riddle",
+    "text": "Énigme 91 : Qu'est-ce qui devient plus humide en séchant ? Réponse : Une serviette."
+  },
+  {
+    "id": "fr-r-092",
+    "kind": "riddle",
+    "text": "Énigme 92 : Qu'a des clés mais pas de serrures ? Réponse : Un clavier."
+  },
+  {
+    "id": "fr-r-093",
+    "kind": "riddle",
+    "text": "Énigme 93 : Qu'a une tête et une queue mais pas de corps ? Réponse : Une pièce."
+  },
+  {
+    "id": "fr-r-094",
+    "kind": "riddle",
+    "text": "Énigme 94 : Qu'est-ce qui voyage autour du monde en restant dans un coin ? Réponse : Un timbre."
+  },
+  {
+    "id": "fr-r-095",
+    "kind": "riddle",
+    "text": "Énigme 95 : Qu'a des mains mais ne peut applaudir ? Réponse : Une horloge."
+  },
+  {
+    "id": "fr-r-096",
+    "kind": "riddle",
+    "text": "Énigme 96 : Qu'a un cou mais pas de tête ? Réponse : Une bouteille."
+  },
+  {
+    "id": "fr-r-097",
+    "kind": "riddle",
+    "text": "Énigme 97 : Qu'est-ce qui court mais ne marche jamais ? Réponse : Une rivière."
+  },
+  {
+    "id": "fr-r-098",
+    "kind": "riddle",
+    "text": "Énigme 98 : Qu'a beaucoup de dents mais ne mord pas ? Réponse : Un peigne."
+  },
+  {
+    "id": "fr-r-099",
+    "kind": "riddle",
+    "text": "Énigme 99 : Qu'est-ce qui peut être cassé, fait, raconté et joué ? Réponse : Une blague."
+  },
+  {
+    "id": "fr-r-100",
+    "kind": "riddle",
+    "text": "Énigme 100 : Qu'a un oeil mais ne voit pas ? Réponse : Une aiguille."
+  }
+]
